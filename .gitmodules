@@ -1,0 +1,3 @@
+[submodule "pubfisher"]
+	path = pubfisher
+	url = https://github.com/momits/pubfisher.git
