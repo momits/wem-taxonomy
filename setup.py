@@ -8,10 +8,11 @@ setuptools.setup(
     version='2020.01.14',
     author='Moritz Renftle',
     author_email='wem-taxonomy@momits.de',
-    description='Reproduce the database of use cases of WEMs.',
+    description='Reproduce the database of use cases for WEMs.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/momits/pubfisher/',
+    package_dir={'': 'src'},
     packages=setuptools.find_packages('src'),
     classifiers=[
         'Programming Language :: Python :: 3',
