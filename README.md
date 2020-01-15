@@ -45,7 +45,7 @@ After that, you can install the `reproduce_wem_taxonomy` package as well:
 python3 -m pip install -e .
 ```
 
-## Step 2: Collect the publications from Google Scholar
+## Step 2: Collecting the publications from Google Scholar
 
 In order to finally collect the publications,
 simply execute the module `fish_wem_taxonomy`:
