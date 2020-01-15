@@ -38,4 +38,5 @@ simply execute the module `fish_wem_taxonomy`:
 python3 -m reproduce_wem_taxonomy.fish_wem_taxonomy
 ```
 
-The publications are now stored in the database table 'publications'.
+The publications are now stored in the database table 'publications' of
+your previously created Postgres database.
