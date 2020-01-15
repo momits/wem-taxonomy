@@ -18,7 +18,7 @@ You must also create a user called 'taxonomist' who will own the created
 tables. If you intend to use the database with our Use Case Collector (UCC)
 tool later on, you should execute the above schema dump with a Postgres user 
 who has root privileges.
-This is needed to install the Postgres trigram extension (pg_trgm).
+The root privileges are needed to install the Postgres trigram extension (pg_trgm).
 
 ## Step 1a): Installing from PyPI
 
@@ -50,7 +50,7 @@ python3 -m pip install -e .
 In order to finally collect the publications,
 simply execute the module `fish_wem_taxonomy`:
 ```bash
-python3 -m reproduce_wem_taxonomy.fish_wem_taxonomy
+python3 -m reproduce_wem_taxonomy.collect_relevant_publications
 ```
 
 The publications are now stored in the database table 'publications' of
