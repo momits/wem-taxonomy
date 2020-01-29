@@ -3,6 +3,8 @@
 This repository contains the code that was used to collect relevant 
 publications and store them in a Postgres Database.
 Additionally, we also provide some convenient exported views on the database for you to explore.
+If you want to see the views, look in the `data` directory.
+If you want to reproduce our collection of relevant publications, continue reading.
 
 You are welcome to reproduce our database!
 Note however that the search results on Google Scholar may have been updated
