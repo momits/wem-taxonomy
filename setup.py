@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='reproduce_wem_taxonomy',
-    version='2020.01.15',
+    version='2020.01.29',
     author='Moritz Renftle',
     author_email='wem-taxonomy@momits.de',
     description='Reproduce the database of use cases for WEMs.',
