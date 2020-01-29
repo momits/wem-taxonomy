@@ -1,0 +1,2225 @@
+[
+  {
+    "pub_id": 1273,
+    "abbreviation": "[Strubell 2018]",
+    "title": "Linguistically-informed self-attention for semantic role labeling",
+    "year": 2018,
+    "authors": "E Strubell, P Verga, D Andor, D Weiss\u2026",
+    "abstract": "The current state-of-the-art end-to-end semantic role labeling (SRL) model is a deep neural network architecture with no explicit linguistic features. However, prior work has shown that gold syntax trees can dramatically improve SRL, suggesting that neural network models \u2026",
+    "url": "https://arxiv.org/abs/1804.08199",
+    "citation_count": 85,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=14181983828043963745&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1794
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 61,
+        "mention_description": "",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 13,
+              "name": "Semantic Role Labeling",
+              "description": "Extracting triples (subject, predicate, object) from text."
+            },
+            "application_description": "ELMO improves the performance on CoNLL-2005 and CoNLL-2012."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 1805,
+    "abbreviation": "[Mikolov 2013]",
+    "title": "Efficient estimation of word representations in vector space",
+    "year": 2013,
+    "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+    "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+    "url": "https://arxiv.org/abs/1301.3781",
+    "citation_count": 14011,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+        "included_because": "primary"
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 64,
+        "mention_description": "Distances are used to solve analogical reasoning tasks.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "According to the authors, computing\n```\n  e(king) - e(queen) + e(actor)\n```\nproduces an embedding close to `e(actress)`."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 1267,
+    "abbreviation": "[Wang 2018]",
+    "title": "Glue: A multi-task benchmark and analysis platform for natural language understanding",
+    "year": 2018,
+    "authors": "A Wang, A Singh, J Michael, F Hill, O Levy\u2026",
+    "abstract": "For natural language understanding (NLU) technology to be maximally useful, both practically and as a scientific object of study, it must be general: it must be able to process language in a way that is not exclusively tailored to any one specific task or dataset. In \u2026",
+    "url": "https://arxiv.org/abs/1804.07461",
+    "citation_count": 255,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=14181983828043963745&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1794
+      },
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 58,
+        "mention_description": "",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 15,
+              "name": "Natural Language Inference",
+              "description": "Determining the logical relationship between text snippets, e.g. entailment, contradiction or independence."
+            },
+            "application_description": "ELMO increases performance on MNLI and QNLI."
+          },
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "ELMO increases performance on SST-2."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 506,
+    "abbreviation": "[Kiros 2014]",
+    "title": "Unifying visual-semantic embeddings with multimodal neural language models",
+    "year": 2014,
+    "authors": "R Kiros, R Salakhutdinov, RS Zemel",
+    "abstract": "Inspired by recent advances in multimodal learning and machine translation, we introduce an encoder-decoder pipeline that learns\n\n 1. a multimodal joint embedding space with images and text and\n 2. a novel language model for decoding distributed representations from our space.\n\nOur pipeline effectively **unifies joint image-text embedding models with multimodal neural language models**. We introduce the structure-content neural language model that disentangles the structure of a sentence to its content, conditioned on representations produced by the encoder.\nThe encoder allows one to rank images and sentences while the decoder can generate novel descriptions from scratch. Using LSTM to encode sentences, we **match the state-of-the-art performance on Flickr8K and Flickr30K without using object detections**. We also set new best results when using the 19-layer Oxford convolutional network. Furthermore we show that with linear encoders, the **learned embedding space captures multimodal regularities in terms of vector space arithmetic e.g. *image of a blue car* - \"blue\" + \"red\" is near images of red cars**.\nSample captions generated for 800 images are made available for comparison.",
+    "url": "https://arxiv.org/abs/1411.2539",
+    "citation_count": 739,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 42,
+        "mention_description": "Distances are interpreted as semantic dissimilarity.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Embed words in the same vector space as visuals.\nAccording to the authors, computing\n```\n  e(image of a blue car) - e(the word \"blue\") + e(the word \"red\")\n```\nproduces an embedding close to `e(image of a red car)`."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 529,
+    "abbreviation": "[Palangi 2016]",
+    "title": "Deep sentence embedding using long short-term memory networks: Analysis and application to information retrieval",
+    "year": 2016,
+    "authors": "H Palangi, L Deng, Y Shen, J Gao, X He\u2026",
+    "abstract": "This paper develops a model that addresses sentence embedding, a hot topic in current natural language processing research, using recurrent neural networks (RNN) with Long Short-Term Memory (LSTM) cells. The proposed LSTM-RNN model sequentially takes each \u2026",
+    "url": "https://dl.acm.org/citation.cfm?id=2992457",
+    "citation_count": 405,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 92,
+        "mention_description": "Cosine distance between sentence embeddings is interpreted as semantic dissimilarity.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Measure the semantic similarity between the query and candidate documents.\nHowever, the dataset the authors used for their evaluation is unclear."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 527,
+    "abbreviation": "[Ren 2015]",
+    "title": "Exploring models and data for image question answering",
+    "year": 2015,
+    "authors": "M Ren, R Kiros, R Zemel",
+    "abstract": "This work aims to address the problem of image-based question-answering (QA) with new models and datasets. In our work, we propose to use neural networks and visual semantic embeddings, without intermediate stages such as object detection and image segmentation \u2026",
+    "url": "http://papers.nips.cc/paper/5640-exploring-models-and-data-for-image-question-answering",
+    "citation_count": 404,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 91,
+        "mention_description": "Skip-gram embeddings are used in one of the models in the same way as in [Vinyals 2015].",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 25,
+              "name": "Visual Question Answering",
+              "description": "Highlighting the part of an image that contains the answer to a natural language question (if any) and generating a natural language answer."
+            },
+            "application_description": "Model using skip-grams performs well on COCO-QA and DAQUAR benchmarks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 528,
+    "abbreviation": "[Levy 2014]",
+    "title": "Linguistic regularities in sparse and explicit word representations",
+    "year": 2014,
+    "authors": "O Levy, Y Goldberg",
+    "abstract": "Recent work has shown that neural embedded word representations capture many relational similarities, which can be recovered by means of vector arithmetic in the embedded space. We show that Mikolov et al.'s method of first adding and subtracting word vectors, and then \u2026",
+    "url": "https://www.aclweb.org/anthology/W14-1618",
+    "citation_count": 385,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 93,
+        "mention_description": "Different definitions for distance metrics are evaluated. Some of them can better be interpreted as semantic similarity than others.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": " New way of computing the distance between embeddings yields improvements on MSR and GOOGLE datasets."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 748,
+    "abbreviation": "[Guo 2015]",
+    "title": "Cross-lingual dependency parsing based on distributed representations",
+    "year": 2015,
+    "authors": "J Guo, W Che, D Yarowsky, H Wang, T Liu",
+    "abstract": "This paper investigates the problem of **cross-lingual dependency parsing**, aiming at inducing dependency parsers for low-resource languages while using only training data from a resource-rich language (e.g. English).\n\nExisting approaches typically don\u2019t include lexical features, which are not transferable across languages. In this paper, we bridge the lexical feature gap by using distributed feature representations and their composition. We provide two algorithms for **inducing cross-lingual distributed representations of words**, which map vocabularies from two different languages into a common vector space. Consequently, both lexical features and non-lexical features can be used in our model for cross-lingual transfer.\n\nFurthermore, our framework is able to incorporate additional useful features such as cross-lingual word clusters. Our combined contributions achieve an average relative error reduction of 10.9% in labeled attachment score as compared with the delexicalized parser, trained on English universal treebank and transferred to three other languages. It also significantly outperforms McDonald et al. (2013) augmented with projected cluster features on identical data.",
+    "url": "https://www.aclweb.org/anthology/P15-1119.pdf",
+    "citation_count": 98,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 76,
+        "mention_description": "Embeddings enhance the input of a ML model for dependency parsing.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 26,
+              "name": "Parsing",
+              "description": "Extracting a parse tree from a sentence that represents its syntactic structure.\nThe resulting parse tree can be constituency based or dependency based."
+            },
+            "application_description": "Embeddings help to implement a dependency parser that can parse multiple languages."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2049,
+    "abbreviation": "[Ma 2016]",
+    "title": "End-to-end sequence labeling via bi-directional lstm-cnns-crf",
+    "year": 2016,
+    "authors": "X Ma, E Hovy",
+    "abstract": "State-of-the-art sequence labeling systems traditionally require large amounts of task-specific knowledge in the form of hand-crafted features and data pre-processing.\n\nIn this paper, we introduce a novel **neural network architecture that benefits from both word- and character-level representations** automatically, by using combination of bidirectional LSTM, CNN and CRF. Our system is truly end-to-end, requiring no feature engineering or data pre-processing, thus making it applicable to a wide range of sequence labeling tasks.\n\nWe evaluate our system on two data sets for two sequence labeling tasks: Penn Treebank WSJ corpus for part-of-speech (POS) tagging and CoNLL 2003 corpus for named entity recognition (NER).\nWe obtain state-of-the-art performance on both the two data: 97.55% accuracy for POS tagging and 91.21% F1 for NER. ",
+    "url": "https://arxiv.org/abs/1603.01354",
+    "citation_count": 981,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 50,
+        "mention_description": "GloVe embeddings enhance the input of a LSTM.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 12,
+              "name": "Named-Entity Recognition",
+              "description": "Determining which items in a text map to proper names, such as people or places, and what the type of each such name is (e.g. person, location, organization)."
+            },
+            "application_description": "Achieves SOTA performance on CoNLL 2003 corpus: 91.21% F1"
+          },
+          {
+            "domain": {
+              "dom_id": 20,
+              "name": "Part-of-speech Tagging",
+              "description": "Assigning a part-of-speech (POS) to each word in a text (POS = a category of words which have similar grammatical properties)."
+            },
+            "application_description": "Achieves SOTA performance on Penn Treebank WSJ corpus: 97.55% accuracy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2057,
+    "abbreviation": "[Akata 2015]",
+    "title": "Evaluation of output embeddings for fine-grained image classification",
+    "year": 2015,
+    "authors": "Z Akata, S Reed, D Walter, H Lee\u2026",
+    "abstract": "Image classification has advanced significantly in recent years with the availability of large-scale image sets. However, fine-grained classification remains a major challenge due to the annotation cost of large numbers of fine-grained categories.\n\nThis project shows that compelling classification performance can be achieved on such categories even without labeled training data. Given image and class embeddings, we learn a compatibility function such that matching embeddings are assigned a higher score than mismatching ones; zero-shot classification of an image proceeds by finding the label yielding the highest joint compatibility score. We use state-of-the-art image features and focus on different supervised attributes and unsupervised output embeddings either derived from hierarchies or learned from unlabeled text corpora.\n\nWe establish a substantially improved state-of-the-art on the Animals with Attributes and Caltech-UCSD Birds datasets. Most encouragingly, we demonstrate that purely unsupervised output embeddings (learned from Wikipedia and improved with fine-grained text) achieve compelling results, even outperforming the previous supervised state-of-the-art. By combining different output embeddings, we further improve results. ",
+    "url": "http://openaccess.thecvf.com/content_cvpr_2015/html/Akata_Evaluation_of_Output_2015_CVPR_paper.html",
+    "citation_count": 463,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 57,
+        "mention_description": "Class labels are embedded.",
+        "use_case": {
+          "uc_id": 29,
+          "title": "Learning Embeddings",
+          "description": "A new model can be trained to **predict the embeddings of the original outputs**.\nThe mapping from outputs to embeddings must be bidirectional to\n\n 1. embed the original outputs into the vector space before training, and\n 2. retrieve the desired outputs from the predicted embeddings during prediction.\n\nDuring training, the model will be shown similar embeddings for semantically related outputs.\nIdeally, this **encourages the model to discriminate its inputs according to semantical differences**, i.e. if two inputs map to similar embeddings it will focus on their commonalities and if not, it will focus on their differences.\n\nFurthermore, the enhanced model will also be able to perform **zero-shot learning**."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 18,
+              "name": "Image Captioning & Object Recognition",
+              "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
+            },
+            "application_description": "Class labels are embedded (e.g. with word2vec), then a model is trained to learn the *compatibility* between image embeddings and class embeddings."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 545,
+    "abbreviation": "[Zeng 2015]",
+    "title": "Distant supervision for relation extraction via piecewise convolutional neural networks",
+    "year": 2015,
+    "authors": "D Zeng, K Liu, Y Chen, J Zhao",
+    "abstract": "Two problems arise when using distant supervision for relation extraction. First, in this method, an already existing knowledge base is heuristically aligned to texts, and the alignment results are treated as labeled data. However, the heuristic alignment can fail \u2026",
+    "url": "https://www.aclweb.org/anthology/D15-1203",
+    "citation_count": 389,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      },
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 94,
+        "mention_description": "Skip-grams enhance the input.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 29,
+              "name": "Relationship Extraction",
+              "description": "Extracting semantic relationships from a text, e.g. married to, lives in."
+            },
+            "application_description": "Skip-grams improve performance of the model on an evaluation using Freebase relations with the NYT corpus."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 524,
+    "abbreviation": "[Santos 2014]",
+    "title": "Learning character-level representations for part-of-speech tagging",
+    "year": 2014,
+    "authors": "CD Santos, B Zadrozny",
+    "abstract": "Distributed word representations have recently been proven to be an invaluable resource for NLP. These representations are normally learned using neural networks and capture syntactic and semantic information about words. Information about word morphology and \u2026",
+    "url": "http://www.jmlr.org/proceedings/papers/v32/santos14.pdf",
+    "citation_count": 423,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 69,
+        "mention_description": "Character embeddings + skip-gram embeddings enhance the input for a NN.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 20,
+              "name": "Part-of-speech Tagging",
+              "description": "Assigning a part-of-speech (POS) to each word in a text (POS = a category of words which have similar grammatical properties)."
+            },
+            "application_description": "Embeddings are input to NN for POS tagging."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 525,
+    "abbreviation": "[Mnih 2013]",
+    "title": "Learning word embeddings efficiently with noise-contrastive estimation",
+    "year": 2013,
+    "authors": "A Mnih, K Kavukcuoglu",
+    "abstract": "Continuous-valued word embeddings learned by neural language models have recently been shown to capture semantic and syntactic information about words very well, setting performance records on several word similarity tasks. The best results are obtained by \u2026",
+    "url": "http://papers.nips.cc/paper/5165-learning-word-embeddings",
+    "citation_count": 401,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 70,
+        "mention_description": "The noise-contrastive embeddings permit interpretation of distances.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Embeddings are evaluated on two analogy-based word similarity tasks, one from Microsoft and one from Google. k-NN is used on cosine distance to find the predicted word.\n-> assumption: cosine distance = semantic distance"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 531,
+    "abbreviation": "[Lin 2017]",
+    "title": "A structured self-attentive sentence embedding",
+    "year": 2017,
+    "authors": "Z Lin, M Feng, CN Santos, M Yu, B Xiang\u2026",
+    "abstract": "This paper proposes a new model for extracting an interpretable sentence embedding by introducing self-attention. Instead of using a vector, we use a 2-D matrix to represent the embedding, with each row of the matrix attending on a different part of the sentence. We also \u2026",
+    "url": "https://arxiv.org/abs/1703.03130",
+    "citation_count": 632,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      },
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 68,
+        "mention_description": "Sentence embeddings enhance the input for many tasks.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "Sentence embeddings are used to classify sentences:\n\nA) Predict age of writer of sentence.\nB) Predict sentiment of sentence."
+          },
+          {
+            "domain": {
+              "dom_id": 15,
+              "name": "Natural Language Inference",
+              "description": "Determining the logical relationship between text snippets, e.g. entailment, contradiction or independence."
+            },
+            "application_description": "Textual entailment with SNLI: Predict for a pair of sentences their logical relationship."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 518,
+    "abbreviation": "[Faruqui 2014]",
+    "title": "Retrofitting word vectors to semantic lexicons",
+    "year": 2014,
+    "authors": "M Faruqui, J Dodge, SK Jauhar, C Dyer, E Hovy\u2026",
+    "abstract": "Vector space word representations are learned from distributional information of words in large corpora.\nAlthough such statistics are semantically informative, they disregard the valuable information that is contained in semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database.\n\nThis paper proposes a method for **refining vector space representations using relational information from semantic lexicons by encouraging linked words to have similar vector representations**, and it makes no assumptions about how the input vectors were constructed.\n\nEvaluated on a battery of standard lexical semantic evaluation tasks in several languages, we obtain substantial improvements starting with a variety of word vector models. Our refinement method outperforms prior techniques for incorporating semantic lexicons into the word vector training algorithms. ",
+    "url": "https://arxiv.org/abs/1411.4166",
+    "citation_count": 545,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      },
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 72,
+        "mention_description": "Various forms of word similarities are computed as vector distances.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Run a variety of different benchmarks to measure word similarity:\n\n - WS-353 dataset (Finkelstein etal., 2001) \n - RG-65 (Rubensteinand Goodenough, 1965) dataset \n - MEN dataset (Bruni et al., 2012)\n - Mikolovs analogy tests\n - synonym selection (TOEFL)  (Landauer and Dumais, 1997)\n\nRetrofitted embeddings improve performance on these benchmarks."
+          }
+        ]
+      },
+      {
+        "mention_id": 73,
+        "mention_description": "Embeddings are used as enhanced input to ML model.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "Embeddings improve scores for sentiment analysis (model: l2-regularized logistic regression), on treebank by Socher et al. (2013)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 1794,
+    "abbreviation": "[Peters 2018]",
+    "title": "Deep contextualized word representations",
+    "year": 2018,
+    "authors": "ME Peters, M Neumann, M Iyyer, M Gardner\u2026",
+    "abstract": "We introduce a new type of deep contextualized word representation that models both\n\n 1. complex characteristics of word use (e.g., syntax and semantics), and\n 2. how these uses vary across linguistic contexts (i.e., to model polysemy).\n\nOur word vectors are learned **functions of the internal states of a deep bidirectional language model (biLM)**, which is pretrained on a large text corpus.\n\nWe show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including\n\n - question answering\n - textual entailment and\n - sentiment analysis.\n\nWe also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.",
+    "url": "https://arxiv.org/abs/1802.05365",
+    "citation_count": 2104,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?q=Deep%20contextualized%20word%20representations&hl=en",
+        "included_because": "primary"
+      },
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 46,
+        "mention_description": "ELMo embeddings are added to the individual models inputs.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 13,
+              "name": "Semantic Role Labeling",
+              "description": "Extracting triples (subject, predicate, object) from text."
+            },
+            "application_description": "Re-implementation of *He et al. (2017)*\n*OntoNotes benchmark (Pradhan et al., 2012)*\n\n8-layer deep biLSTM with forward and backward directions interleaved\n\nELMO achieves 1.2% relative increase of F1."
+          },
+          {
+            "domain": {
+              "dom_id": 14,
+              "name": "Coreference Resolution",
+              "description": "Marking multiple occurrences of the same entities in text with the same identifier."
+            },
+            "application_description": "*End-to-end span-based neural model of Lee et al. (2017):*\n*OntoNotes coreference task (Pradhan et al., 2012)*\n\nUses biLSTM and attention mechanism to first compute span representations, then applies a softmax mention ranking model to find coreference chains.\n\nELMO achieves 1.6% relative increase of F1."
+          },
+          {
+            "domain": {
+              "dom_id": 15,
+              "name": "Natural Language Inference",
+              "description": "Determining the logical relationship between text snippets, e.g. entailment, contradiction or independence."
+            },
+            "application_description": "*Stanford Natural Language Inference (SNLI) corpus (Bowman et al., 2015):*\n\nProvides approximately 550K hypothesis/premise pairs.\n\nELMO achieves 0.7%% relative increase of accuracy."
+          },
+          {
+            "domain": {
+              "dom_id": 16,
+              "name": "Question Answering",
+              "description": "Highlighting the part of a document that contains the answer to a given question (if any)."
+            },
+            "application_description": "*SQuAD dataset:*\n\n100K+ crowd sourced question-answer pairs where the answer is a span in a given Wikipedia paragraph.\n\n25% error reduction attributable to ELMO."
+          },
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "*Sentiment classification task in the Stanford Sentiment Treebank (SST-5; Socher et al., 2013):*\n\nSelecting one of five labels (from very negative to very\npositive) to describe a sentence from a movie re-\nview.\n\nELMO achieves 1% *absolute* increase of accuracy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 476,
+    "abbreviation": "[Mikolov 2013]",
+    "title": "Distributed representations of words and phrases and their compositionality",
+    "year": 2013,
+    "authors": "T Mikolov, I Sutskever, K Chen, GS Corrado\u2026",
+    "abstract": "The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships.\nIn this paper we present several improvements that make the Skip-gram model more expressive and enable it to learn higher quality vectors more rapidly.\n\nWe show that by subsampling frequent words we obtain significant speedup, and also learn higher quality representations as measured by our tasks. We also introduce Negative Sampling, a simplified variant of Noise Contrastive Estimation (NCE) that learns more accurate vectors for frequent words compared to the hierarchical softmax.\n\nAn inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of Canada'' and \"Air'' cannot be easily combined to obtain \"Air Canada''. Motivated by this example, we present a simple and efficient method for finding phrases, and show that their vector representations can be accurately learned by the Skip-gram model.\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+    "url": "http://papers.nips.cc/paper/5021-distributed-representations-of-words-andphrases",
+    "citation_count": 17270,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 83,
+        "mention_description": "Distances are used to solve analogical reasoning tasks.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Distances are interpreted as semantic similarity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 1342,
+    "abbreviation": "[Marcus 2019]",
+    "title": "Neo: A learned query optimizer",
+    "year": 2019,
+    "authors": "R Marcus, P Negi, H Mao, C Zhang, M Alizadeh\u2026",
+    "abstract": "Query optimization is one of the most challenging problems in database systems. Despite the progress made over the past decades, query optimizers remain extremely complex components that require a great deal of hand-tuning for specific workloads and datasets. \n\nMotivated by this shortcoming and inspired by recent advances in applying machine learning to data management challenges, we introduce Neo (Neural Optimizer), a novel learning-based query optimizer that relies on deep neural networks to generate query executions plans. Neo bootstraps its query optimization model from existing optimizers and continues to learn from incoming queries, building upon its successes and learning from its failures. Furthermore, Neo naturally adapts to underlying data patterns and is robust to estimation errors.\n\nExperimental results demonstrate that Neo, even when bootstrapped from a simple optimizer like PostgreSQL, can learn a model that offers similar performance to state-of-the-art commercial optimizers, and in some cases even surpass them.",
+    "url": "https://arxiv.org/abs/1904.03711",
+    "citation_count": 19,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=14181983828043963745&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1794
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 54,
+        "mention_description": "Embeddings are learned for all distinct values in the database (= words). Enhance the input to a NN for query optimization.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 21,
+              "name": "Query Optimization",
+              "description": "Computing the fastest execution plan for a database query."
+            },
+            "application_description": "Query predicates are encoded as vectors using the embeddings of the values contained in the predicate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2053,
+    "abbreviation": "[Fukui 2016]",
+    "title": "Multimodal compact bilinear pooling for visual question answering and visual grounding",
+    "year": 2016,
+    "authors": "A Fukui, DH Park, D Yang, A Rohrbach\u2026",
+    "abstract": "Modeling textual or visual information with vector representations trained from large language or visual datasets has been successfully explored in recent years. However, tasks such as visual question answering require combining these vector representations with \u2026",
+    "url": "https://arxiv.org/abs/1606.01847",
+    "citation_count": 589,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 56,
+        "mention_description": "Embeddings enhance the input.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 25,
+              "name": "Visual Question Answering",
+              "description": "Highlighting the part of an image that contains the answer to a natural language question (if any) and generating a natural language answer."
+            },
+            "application_description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 494,
+    "abbreviation": "[Lample 2016]",
+    "title": "Neural architectures for named entity recognition",
+    "year": 2016,
+    "authors": "G Lample, M Ballesteros, S Subramanian\u2026",
+    "abstract": "State-of-the-art named entity recognition systems rely heavily on hand-crafted features and domain-specific knowledge in order to learn effectively from the small, supervised training corpora that are available.\nIn this paper, we introduce two new neural architectures - one based on bidirectional LSTMs and conditional random fields, and the other that constructs and labels segments using a transition-based approach inspired by shift-reduce parsers.\n\nOur models rely on two sources of information about words: character-based word representations learned from the supervised corpus and unsupervised word representations learned from unannotated corpora. Our models obtain state-of-the-art performance in NER in four languages without resorting to any language-specific knowledge or resources such as gazetteers. ",
+    "url": "https://arxiv.org/abs/1603.01360",
+    "citation_count": 1474,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 36,
+        "mention_description": "Skip-gram embeddings and character-based embeddings are used as inputs.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 12,
+              "name": "Named-Entity Recognition",
+              "description": "Determining which items in a text map to proper names, such as people or places, and what the type of each such name is (e.g. person, location, organization)."
+            },
+            "application_description": "SGNS help to improve the performance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 507,
+    "abbreviation": "[Krishna 2017]",
+    "title": "Visual genome: Connecting language and vision using crowdsourced dense image annotations",
+    "year": 2017,
+    "authors": "R Krishna, Y Zhu, O Groth, J Johnson, K Hata\u2026",
+    "abstract": "Despite progress in perceptual tasks such as image classification, computers still perform poorly on cognitive tasks such as image description and question answering. Cognition is core to tasks that involve not just recognizing, but reasoning about our visual world. However, models used to tackle the rich content in images for cognitive tasks are still being trained using the same datasets designed for perceptual tasks. To achieve success at cognitive tasks, models need to understand the interactions and relationships between objects in an image. When asked \u201cWhat vehicle is the person riding?\u201d, computers will need to identify the objects in an image as well as the relationships riding(man, carriage) and pulling(horse, carriage) to answer correctly that \u201cthe person is riding a horse-drawn carriage.\u201d In this paper, we present the Visual Genome dataset to enable the modeling of such relationships.\n\nWe **collect dense annotations of objects, attributes, and relationships within each image to learn these models**. Specifically, our dataset contains over 108K images where each image has an average of 35 objects, 26 attributes, and 21 pairwise relationships between objects. We canonicalize the objects, attributes, relationships, and noun phrases in region descriptions and questions answer pairs to WordNet synsets. Together, these annotations represent the densest and largest dataset of image descriptions, objects, attributes, relationships, and question answer pairs.\n",
+    "url": "https://link.springer.com/article/10.1007/S11263-016-0981-7",
+    "citation_count": 941,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 45,
+        "mention_description": "Distances are interpreted as semantic dissimilarity.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Annotate images with dense descriptions of the entities visible in specific regions and their semantic relationships.\n\nTo assess the quality of their annotations, they want to analyse the \"semantic diversity\" of the region descriptions, like this:\n\n 1. Map each word of a region description to the corresponding\n     skip-gram embedding (using the word2vec pre-trained model).\n 2. Average of all embeddings = region embedding\n 3. Cluster the region embeddings with hierarchical agglomerative\n     clustering (assumption: distances between embeddings\n     represent semantic dissimilarity).\n\nObtain 71 \"semantic/syntactic clusters\".\nDiversity: on average, each image contains descriptions from 17 different clusters."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 652,
+    "abbreviation": "[Xing 2015]",
+    "title": "Normalized word embedding and orthogonal transform for bilingual word translation",
+    "year": 2015,
+    "authors": "C Xing, D Wang, C Liu, Y Lin",
+    "abstract": "Word embedding has been found to be highly powerful to translate words from one language to another by a simple linear transform. However, we found some inconsistence among the objective functions of the embedding and the transform learning, as well as the distance measurement.\n\nThis paper proposes a solution which **normalizes the word vectors on a hypersphere and constrains the linear transform as an orthogonal transform**. The experimental results confirmed that the proposed solution can offer better performance on a word similarity task and an English-to-Spanish word translation task.",
+    "url": "https://www.aclweb.org/anthology/N15-1104",
+    "citation_count": 180,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 38,
+        "mention_description": "",
+        "use_case": {
+          "uc_id": 30,
+          "title": "Mapping Between Word Vector Spaces",
+          "description": "Given two vector spaces of different WEMs, there might be a simple natural mapping between the two, translating embeddings from one WEM into embeddings of the other.\n\nProvided that the individual WEMs are meaningful in their respective domains, such a **mapping can serve as a translation between the vocabularies of these domains.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 6,
+              "name": "Translation",
+              "description": "Mapping text of one language to text of another language, such that both have similar meanings."
+            },
+            "application_description": "A simple linear mapping between the vector spaces of the WEMs of two different languages is learned and used for translation between those languages."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2054,
+    "abbreviation": "[Zhang 2015]",
+    "title": "A sensitivity analysis of (and practitioners' guide to) convolutional neural networks for sentence classification",
+    "year": 2015,
+    "authors": "Y Zhang, B Wallace",
+    "abstract": "Convolutional Neural Networks (CNNs) have recently achieved remarkably strong performance on the practically important task of sentence classification (kim 2014, kalchbrenner 2014, johnson 2014). However, these models require practitioners to specify \u2026",
+    "url": "https://arxiv.org/abs/1510.03820",
+    "citation_count": 529,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 66,
+        "mention_description": "Skip-grams and GloVe embeddings are used as inputs to a CNN.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "Embeddings are used to improve CNN for sentence classification tasks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 1270,
+    "abbreviation": "[Hu 2017]",
+    "title": "Reinforced mnemonic reader for machine reading comprehension",
+    "year": 2017,
+    "authors": "M Hu, Y Peng, Z Huang, X Qiu, F Wei\u2026",
+    "abstract": "In this paper, we introduce the Reinforced Mnemonic Reader for machine reading comprehension tasks, which enhances previous attentive readers in two aspects.\n\nFirst, a reattention mechanism is proposed to refine current attentions by directly accessing to past attentions that are temporally memorized in a multi-round alignment architecture, so as to avoid the problems of attention redundancy and attention deficiency.\n\nSecond, a new optimization approach, called dynamic-critical reinforcement learning, is introduced to extend the standard supervised method. It always encourages to predict a more acceptable answer so as to address the convergence suppression problem occurred in traditional reinforcement learning algorithms. Extensive experiments on the Stanford Question Answering Dataset (SQuAD) show that our model achieves state-of-the-art results. Meanwhile, our model outperforms previous systems by over 6% in terms of both Exact Match and F1 metrics on two adversarial SQuAD datasets. ",
+    "url": "https://arxiv.org/abs/1705.02798",
+    "citation_count": 68,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=14181983828043963745&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1794
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 62,
+        "mention_description": "",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 16,
+              "name": "Question Answering",
+              "description": "Highlighting the part of a document that contains the answer to a given question (if any)."
+            },
+            "application_description": "Improvements in SQuaD (2016) and adversarial SQuaD (2017)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 492,
+    "abbreviation": "[Frome 2013]",
+    "title": "Devise: A deep visual-semantic embedding model",
+    "year": 2013,
+    "authors": "A Frome, GS Corrado, J Shlens, S Bengio\u2026",
+    "abstract": "Modern visual recognition systems are often limited in their ability to scale to large numbers of object categories. This limitation is in part due to the increasing difficulty of acquiring sufficient training data in the form of labeled images as the number of object categories grows. One remedy is to leverage data from other sources -- such as text data -- both to train visual models and to constrain their predictions.\n\nIn this paper we present a new deep visual-semantic embedding model **trained to identify visual objects using both labeled image data as well as semantic information gleaned from unannotated text**.\n\nWe demonstrate that this model matches state-of-the-art performance on the 1000-class ImageNet object recognition challenge while making more semantically reasonable errors, and also show that the semantic information can be exploited to make predictions about tens of thousands of image labels not observed during training. Semantic knowledge improves such zero-shot predictions by up to 65%, achieving hit rates of up to 10% across thousands of novel labels never seen by the visual model.",
+    "url": "http://papers.nips.cc/paper/5204-devise-a-deep-visual-sem",
+    "citation_count": 1286,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 35,
+        "mention_description": "Uses skip-gram embeddings to improve a neural network generating captions for images.\n\nLower layers of the neural network are retrained to predict embeddings of the class labels instead of a class-label distribution.\nk-NN search then yields the predicted class labels for each predicted embedding.\n\nMakes \"**more semantically reasonable errors** and [...] the semantic information can be exploited to **make predictions about tens of thousands of image labels not observed during training**\"",
+        "use_case": {
+          "uc_id": 29,
+          "title": "Learning Embeddings",
+          "description": "A new model can be trained to **predict the embeddings of the original outputs**.\nThe mapping from outputs to embeddings must be bidirectional to\n\n 1. embed the original outputs into the vector space before training, and\n 2. retrieve the desired outputs from the predicted embeddings during prediction.\n\nDuring training, the model will be shown similar embeddings for semantically related outputs.\nIdeally, this **encourages the model to discriminate its inputs according to semantical differences**, i.e. if two inputs map to similar embeddings it will focus on their commonalities and if not, it will focus on their differences.\n\nFurthermore, the enhanced model will also be able to perform **zero-shot learning**."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 18,
+              "name": "Image Captioning & Object Recognition",
+              "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
+            },
+            "application_description": "Achieves state-of-the-art performance on the 1000-class ImageNet object recognition challenge (ILSVRC 2012 1K)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2051,
+    "abbreviation": "[Hamilton 2017]",
+    "title": "Inductive representation learning on large graphs",
+    "year": 2017,
+    "authors": "W Hamilton, Z Ying, J Leskovec",
+    "abstract": "Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during \u2026",
+    "url": "http://papers.nips.cc/paper/6703-inductive-representation-learning-on-large-graphs",
+    "citation_count": 982,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 53,
+        "mention_description": "GloVe embeddings as input features for a NN.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 23,
+              "name": "Node Labeling",
+              "description": "Assigning a label to a node in a graph using information from neighboring nodes."
+            },
+            "application_description": "Embeddings of nodes are initialized using GloVe."
+          }
+        ]
+      },
+      {
+        "mention_id": 63,
+        "mention_description": "NN learns to predict GloVe-based embeddings.",
+        "use_case": {
+          "uc_id": 29,
+          "title": "Learning Embeddings",
+          "description": "A new model can be trained to **predict the embeddings of the original outputs**.\nThe mapping from outputs to embeddings must be bidirectional to\n\n 1. embed the original outputs into the vector space before training, and\n 2. retrieve the desired outputs from the predicted embeddings during prediction.\n\nDuring training, the model will be shown similar embeddings for semantically related outputs.\nIdeally, this **encourages the model to discriminate its inputs according to semantical differences**, i.e. if two inputs map to similar embeddings it will focus on their commonalities and if not, it will focus on their differences.\n\nFurthermore, the enhanced model will also be able to perform **zero-shot learning**."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 23,
+              "name": "Node Labeling",
+              "description": "Assigning a label to a node in a graph using information from neighboring nodes."
+            },
+            "application_description": "Embeddings of neighboring nodes are used to predict an embedding of the target node."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2050,
+    "abbreviation": "[You 2016]",
+    "title": "Image captioning with semantic attention",
+    "year": 2016,
+    "authors": "Q You, H Jin, Z Wang, C Fang\u2026",
+    "abstract": "Automatically generating a natural language description of an image has attracted interests recently both because of its importance in practical applications and because it connects two major artificial intelligence fields: computer vision and natural language processing. Existing \u2026",
+    "url": "http://openaccess.thecvf.com/content_cvpr_2016/html/You_Image_Captioning_With_CVPR_2016_paper.html",
+    "citation_count": 710,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 52,
+        "mention_description": "GloVe embeddings enhance the input of a neural network.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 18,
+              "name": "Image Captioning & Object Recognition",
+              "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
+            },
+            "application_description": "Outperforms SOTA systems on Flickr30k and COCO."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 501,
+    "abbreviation": "[Dos 2014]",
+    "title": "Deep convolutional neural networks for sentiment analysis of short texts",
+    "year": 2014,
+    "authors": "C Dos Santos, M Gatti",
+    "abstract": "Sentiment analysis of short texts such as single sentences and Twitter messages is challenging because of the limited contextual information that they normally contain. Effectively solving this task requires strategies that combine the small text content with prior knowledge and use more than just bag-of-words.\n\nIn this work we propose a new deep convolutional neural network that exploits from character-to sentence-level information to perform sentiment analysis of short texts. We apply our approach for two corpora of two different domains: the Stanford Sentiment Tree-bank (SSTb), which contains sentences from movie reviews; and the Stanford Twitter Sentiment corpus (STS), which contains Twitter messages.\n\nFor the SSTb corpus, our approach achieves state-of-the-art results for single sentence sentiment prediction in both binary positive/negative classification, with 85.7% accuracy, and fine-grained classification, with 48.3% accuracy. For the STS corpus, our approach achieves a sentiment prediction accuracy of 86.4%.",
+    "url": "https://www.aclweb.org/anthology/C14-1008",
+    "citation_count": 906,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 34,
+        "mention_description": "Skip-gram embeddings enhance the input of the model to solve tasks.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "\"initializing word-embeddings using unsupervised pre-training gives an *absolute accuracy increase of around 4.5* when compared to randomly initializing the word-embeddings\"\n(on the SST-5 benchmark)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 482,
+    "abbreviation": "[Le 2014]",
+    "title": "Distributed representations of sentences and documents",
+    "year": 2014,
+    "authors": "Q Le, T Mikolov",
+    "abstract": "Many machine learning algorithms require the input to be represented as a fixed-length feature vector. When it comes to texts, one of the most common fixed-length features is bag-of-words.\nDespite their popularity, bag-of-words features have two major weaknesses: they lose the ordering of the words and they also ignore semantics of the words. For example, \"powerful,\" \"strong\" and \"Paris\" are equally distant.\n\nIn this paper, we propose Paragraph Vector, an unsupervised algorithm that **learns fixed-length feature representations from variable-length pieces of texts**, such as sentences, paragraphs, and documents. Our algorithm represents each document by a dense vector which is trained to predict words in the document. Its construction gives our algorithm the potential to overcome the weaknesses of bag-of-words models. Empirical results show that **Paragraph Vectors outperform bag-of-words models** as well as other techniques for text representations. Finally, we achieve new **state-of-the-art results on several text classification and sentiment analysis tasks**. ",
+    "url": "http://www.jmlr.org/proceedings/papers/v32/le14.pdf",
+    "citation_count": 5038,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 43,
+        "mention_description": "CBOW and skip-gram are extended to form *paragraph embeddings* (PEM).",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "PEM reduces error rate on SST-5 and improves performance on IMDB data."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 505,
+    "abbreviation": "[Kusner 2015]",
+    "title": "From word embeddings to document distances",
+    "year": 2015,
+    "authors": "M Kusner, Y Sun, N Kolkin, K Weinberger",
+    "abstract": "We present the Word Mover's Distance (WMD), a novel distance function between text documents. Our work is based on recent results in word embeddings that learn semantically meaningful representations for words from local cooccurrences in sentences.\n\nThe WMD distance measures the dissimilarity between two text documents as the minimum amount of distance that the embedded words of one document need to \"travel\" to reach the embedded words of another document.\n\nWe show that this distance metric can be cast as an instance of the Earth Mover's Distance, a well studied transportation problem for which several highly efficient solvers have been developed. Our metric has no hyperparameters and is straight-forward to implement. Further, we demonstrate on eight real world document classification data sets, in comparison with seven state-of-the-art baselines, that the **WMD metric leads to unprecedented low k-nearest neighbor document classification error rates**.",
+    "url": "http://www.jmlr.org/proceedings/papers/v37/kusnerb15.pdf",
+    "citation_count": 878,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 39,
+        "mention_description": "Word distances are interpreted as semantic dissimilarity.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Use skip-gram embeddings to derive a similarity metric between documents which they call *Word Mover's Distance* (WMD).\n\nCompare WMD with other metrics by measuring the\nperformance of various k-NN classification problems of documents.\n**WMD outperforms all 7 state-of-the-art alternative document distances in 6 of 8 real world classification tasks**.\nThus, the distance vectors produced by the skip-gram embeddings can be used to effectively classify documents."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 523,
+    "abbreviation": "[Norouzi 2013]",
+    "title": "Zero-shot learning by convex combination of semantic embeddings",
+    "year": 2013,
+    "authors": "M Norouzi, T Mikolov, S Bengio, Y Singer\u2026",
+    "abstract": "Several recent publications have proposed methods for mapping images into continuous semantic embedding spaces. In some cases the embedding space is trained jointly with the image transformation. In other cases the semantic embedding space is established by an independent natural language processing task, and then the image transformation into that space is learned in a second stage.\n\nProponents of these image embedding systems have stressed their advantages over the traditional classification framing of image understanding, particularly in terms of the promise for zero-shot learning - the ability to correctly annotate images of previously unseen object categories.\n\nIn this paper, we propose a simple method for constructing an image embedding system from any existing image classifier and a semantic word embedding model, which contains the n class labels in its vocabulary. Our method **maps images into the semantic embedding space via convex combination of the class label embedding vectors**, and **requires no additional training**.\nWe show that this simple and direct method confers many of the advantages associated with more complex image embedding schemes, and indeed outperforms state of the art methods on the ImageNet zero-shot learning task. ",
+    "url": "https://arxiv.org/abs/1312.5650",
+    "citation_count": 461,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 41,
+        "mention_description": "",
+        "use_case": {
+          "uc_id": 32,
+          "title": "Enhancing the Output",
+          "description": "The WEM is treated like an index, which is queried for additional\nsemantic information about the original model output to enhance the final output.\nThe **original model can be reused without any additional training.** But: There has to be a natural bidirectional mapping from model outputs to embeddings.\n\nCan be used for *Zero-shot learning*:\nThe mapping from embeddings to the final outputs can produce semantically and syntactically sensible outputs which were never learned by the original model."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 18,
+              "name": "Image Captioning & Object Recognition",
+              "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
+            },
+            "application_description": "Given an existing image classifier producing a distribution over all possible captions, the **embeddings corresponding to the caption words are weighted according to the captions probability**, then summed up to form the predicted embedding.\nThen, a **k-NN search is used to determine the k most probable classes**.\n\nReaches a larger *hierarchical precision* on unseen images than *DeViSe* and even outperforms the original model on the original classes (w.r.t hierarchical precision).\n\nA nice example of *zero-shot learning*:\nthe interpolation between word vectors is able to predict captions which never occurred in the training data."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 483,
+    "abbreviation": "[Vinyals 2015]",
+    "title": "Show and tell: A neural image caption generator",
+    "year": 2015,
+    "authors": "O Vinyals, A Toshev, S Bengio\u2026",
+    "abstract": "Automatically describing the content of an image is a fundamental problem in artificial intelligence that connects computer vision and natural language processing.\nIn this paper, we present a generative model based on a deep recurrent architecture that combines recent advances in computer vision and machine translation and that can be used to generate natural sentences describing an image. The model is **trained to maximize the likelihood of the target description sentence given the training image**.\n\nExperiments on several datasets show the accuracy of the model and the fluency of the language it learns solely from image descriptions. Our model is often quite accurate, which we verify both qualitatively and quantitatively. For instance, while the current state-of-the-art BLEU score (the higher the better) on the Pascal dataset is 25, our approach yields 59, to be compared to human performance around 69. We also show BLEU score improvements on Flickr30k, from 56 to 66, and on SBU, from 19 to 28. Lastly, on the newly released COCO dataset, we achieve a BLEU-4 of 27.7, which is the current state-of-the-art.\n\n\nComment\n----------\nThe first iteration of the LSTM has three inputs:\n\n 1. the image\n 2. the word embedding of the previously generated word\n 3. the state of the LSTM\n\nSubsequent iterations: only 2 and 3\n\nIn the end a complete sentence is generated (signalled by stop-word).",
+    "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Vinyals_Show_and_Tell_2015_CVPR_paper.html",
+    "citation_count": 3159,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 44,
+        "mention_description": "Use skip-gram embeddings to train a LSTM model generating *complete sentences* to describe images.\n\n`Embedding(Horse)` is close to `Embedding(Unicorn)`, therefore two pictures showing a horse and a unicorn in the training set will produce similar embedding inputs and therefore 'encourage' the CNN to treat both kinds of images the same way.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 18,
+              "name": "Image Captioning & Object Recognition",
+              "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
+            },
+            "application_description": "Full sentences describing images are produced."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2044,
+    "abbreviation": "[Karpathy 2015]",
+    "title": "Deep visual-semantic alignments for generating image descriptions",
+    "year": 2015,
+    "authors": "A Karpathy, L Fei-Fei",
+    "abstract": "We present a model that generates natural language descriptions of images and their regions. Our approach leverages datasets of images and their sentence descriptions to learn about the inter-modal correspondences between language and visual data.\n\nOur alignment model is based on a novel combination of Convolutional Neural Networks over image regions, bidirectional Recurrent Neural Networks over sentences, and a structured objective that aligns the two modalities through a **multimodal embedding**.\n\nWe then describe a Multimodal Recurrent Neural Network architecture that uses the inferred alignments to learn to generate novel descriptions of image regions. We demonstrate that our alignment model produces **state of the art results in retrieval experiments on Flickr8K, Flickr30K and MSCOCO datasets**. We then show that the generated descriptions significantly outperform retrieval baselines on both full images and on a new dataset of region-level annotations.\n",
+    "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Karpathy_Deep_Visual-Semantic_Alignments_2015_CVPR_paper.html",
+    "citation_count": 3050,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 47,
+        "mention_description": "WIEMs (word-image embeddings) are used as inputs for a RNN in various tasks.\nWord embeddings are initialized with skip-grams.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 18,
+              "name": "Image Captioning & Object Recognition",
+              "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
+            },
+            "application_description": "Full sentences to describe images are generated.\nObtains state of the art results on Flickr8K, Flickr30K and MSCOCO.\n"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2045,
+    "abbreviation": "[Tai 2015]",
+    "title": "Improved semantic representations from tree-structured long short-term memory networks",
+    "year": 2015,
+    "authors": "KS Tai, R Socher, CD Manning",
+    "abstract": "Because of their superior ability to preserve sequence information over time, Long Short-Term Memory (LSTM) networks, a type of recurrent neural network with a more complex computational unit, have obtained strong results on a variety of sequence modeling tasks. The only underlying LSTM structure that has been explored so far is a linear chain.\n\nHowever, **natural language exhibits syntactic properties that would naturally combine words to phrases.** We introduce the Tree-LSTM, a generalization of LSTMs to tree-structured network topologies. **Tree-LSTMs outperform all existing systems and strong LSTM baselines on two tasks**: predicting the semantic relatedness of two sentences (SemEval 2014, Task 1) and sentiment classification (Stanford Sentiment Treebank). ",
+    "url": "https://arxiv.org/abs/1503.00075",
+    "citation_count": 1552,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 48,
+        "mention_description": "Pre-trained GloVe embeddings are used to represent words, which are then fed into a **Tree-LSTM** as inputs for various tasks.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "Stanford Sentiment Treebank:\n*Outperforms SOTA systems on fine-grained classification (SST-5)*"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 502,
+    "abbreviation": "[Mikolov 2013]",
+    "title": "Exploiting similarities among languages for machine translation",
+    "year": 2013,
+    "authors": "T Mikolov, QV Le, I Sutskever",
+    "abstract": "Dictionaries and phrase tables are the basis of modern statistical machine translation systems.\n\nThis paper develops a method that can automate the process of generating and extending dictionaries and phrase tables. Our method can **translate missing word and phrase entries by learning language structures based on large monolingual data and mapping between languages from small bilingual data**.\nIt uses distributed representation of words and learns a **linear mapping between vector spaces of languages**. Despite its simplicity, our method is surprisingly effective: we can achieve almost 90% precision@5 for translation of words between English and Spanish. This method makes little assumption about the languages, so it can be used to extend and refine dictionaries and translation tables for any language pairs.",
+    "url": "https://arxiv.org/abs/1309.4168",
+    "citation_count": 835,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 37,
+        "mention_description": "The vector space of the skip-gram model is used for the mapping.",
+        "use_case": {
+          "uc_id": 30,
+          "title": "Mapping Between Word Vector Spaces",
+          "description": "Given two vector spaces of different WEMs, there might be a simple natural mapping between the two, translating embeddings from one WEM into embeddings of the other.\n\nProvided that the individual WEMs are meaningful in their respective domains, such a **mapping can serve as a translation between the vocabularies of these domains.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 6,
+              "name": "Translation",
+              "description": "Mapping text of one language to text of another language, such that both have similar meanings."
+            },
+            "application_description": "SGNS are trained for each language. Then a linear mapping between the two vector spaces is learned (optimizing the vector distances to the correct translations on the training data)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2047,
+    "abbreviation": "[Bowman 2015]",
+    "title": "A large annotated corpus for learning natural language inference",
+    "year": 2015,
+    "authors": "SR Bowman, G Angeli, C Potts, CD Manning",
+    "abstract": "Understanding entailment and contradiction is fundamental to understanding natural language, and inference about entailment and contradiction is a valuable testing ground for the development of semantic representations. However, machine learning research in this area has been dramatically limited by the lack of large-scale resources.\n\nTo address this, we introduce the **Stanford Natural Language Inference corpus**, a new, freely available collection of labeled sentence pairs, written by humans doing a novel grounded task based on image captioning. At 570K pairs, it is two orders of magnitude larger than all other resources of its type. This increase in scale allows lexicalized classifiers to outperform some sophisticated existing entailment models, and it allows a neural network-based model to perform competitively on natural language inference benchmarks for the first time. ",
+    "url": "https://arxiv.org/abs/1508.05326",
+    "citation_count": 960,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 49,
+        "mention_description": "Pre-trained GloVe embeddings are used to enhance the inputs of a neural net.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 15,
+              "name": "Natural Language Inference",
+              "description": "Determining the logical relationship between text snippets, e.g. entailment, contradiction or independence."
+            },
+            "application_description": "Pre-trained GloVe embeddings are used to represent words, which are then fed into a neural network to obtain sentence embeddings.\nThe sentence embeddings are then used to *train a neural network on the new SNLI textual entailment task, which for the first time reaches performance close to a lexicalized model.*"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 519,
+    "abbreviation": "[Zou 2013]",
+    "title": "Bilingual word embeddings for phrase-based machine translation",
+    "year": 2013,
+    "authors": "WY Zou, R Socher, D Cer, CD Manning",
+    "abstract": "We introduce bilingual word embeddings: semantic embeddings associated across two languages in the context of neural language models. We propose a method to learn bilingual embeddings from a large unlabeled corpus, while utilizing MT word alignments to \u2026\n\nPaper has very bad quality :(",
+    "url": "https://www.aclweb.org/anthology/D13-1141",
+    "citation_count": 449,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 67,
+        "mention_description": "Authors train embeddings with a bilingual alignment objective, based on Collobert embeddings.\nThese aligned embeddings are better than the original ones.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 12,
+              "name": "Named-Entity Recognition",
+              "description": "Determining which items in a text map to proper names, such as people or places, and what the type of each such name is (e.g. person, location, organization)."
+            },
+            "application_description": "Embeddings enhance the input for NER."
+          },
+          {
+            "domain": {
+              "dom_id": 6,
+              "name": "Translation",
+              "description": "Mapping text of one language to text of another language, such that both have similar meanings."
+            },
+            "application_description": "Embeddings can be used to translate phrases (maximize cosine distance between phrase embeddings, which are simply the averaged word embeddings)."
+          }
+        ]
+      },
+      {
+        "mention_id": 71,
+        "mention_description": "Distances are used to estimate semantic similarity.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Cosine distance is computed between embeddings of a pair of English-Chinese words, which are known to be translations of each other. This is reported as Alignment Error Rate.\nBilingual embedings reduce this AER."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 1202,
+    "abbreviation": "[McCann 2018]",
+    "title": "The natural language decathlon: Multitask learning as question answering",
+    "year": 2018,
+    "authors": "B McCann, NS Keskar, C Xiong, R Socher",
+    "abstract": "Deep learning has improved performance on many natural language processing (NLP) tasks individually. However, general NLP models cannot emerge within a paradigm that focuses on the particularities of a single metric, dataset, and task.\n\nWe introduce the Natural Language Decathlon (decaNLP), a challenge that spans ten tasks: question answering, machine translation, summarization, natural language inference, sentiment analysis, semantic role labeling, zero-shot relation extraction, goal-oriented dialogue, semantic parsing, and commonsense pronoun resolution.\nWe cast all tasks as question answering over a context.\n\nFurthermore, we present a new Multitask Question Answering Network (MQAN) jointly learns all tasks in decaNLP without any task-specific modules or parameters in the multitask setting. MQAN shows improvements in transfer learning for machine translation and named entity recognition, domain adaptation for sentiment analysis and natural language inference, and zero-shot capabilities for text classification. We demonstrate that the MQAN's multi-pointer-generator decoder is key to this success and performance further improves with an anti-curriculum training strategy. Though designed for decaNLP, MQAN also achieves state of the art results on the WikiSQL semantic parsing task in the single-task setting. We also release code for procuring and processing data, training and evaluating models, and reproducing all experiments for decaNLP.",
+    "url": "https://arxiv.org/abs/1806.08730",
+    "citation_count": 83,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=14181983828043963745&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1794
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 60,
+        "mention_description": "GloVe embeddings enhance the input to a multi-task question answering model (MQAN).",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 16,
+              "name": "Question Answering",
+              "description": "Highlighting the part of a document that contains the answer to a given question (if any)."
+            },
+            "application_description": "MQAN"
+          },
+          {
+            "domain": {
+              "dom_id": 12,
+              "name": "Named-Entity Recognition",
+              "description": "Determining which items in a text map to proper names, such as people or places, and what the type of each such name is (e.g. person, location, organization)."
+            },
+            "application_description": "MQAN"
+          },
+          {
+            "domain": {
+              "dom_id": 15,
+              "name": "Natural Language Inference",
+              "description": "Determining the logical relationship between text snippets, e.g. entailment, contradiction or independence."
+            },
+            "application_description": "MQAN"
+          },
+          {
+            "domain": {
+              "dom_id": 6,
+              "name": "Translation",
+              "description": "Mapping text of one language to text of another language, such that both have similar meanings."
+            },
+            "application_description": "MQAN"
+          },
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "MQAN"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 691,
+    "abbreviation": "[Artetxe 2016]",
+    "title": "Learning principled bilingual mappings of word embeddings while preserving monolingual invariance",
+    "year": 2016,
+    "authors": "M Artetxe, G Labaka, E Agirre",
+    "abstract": "Mapping word embeddings of different languages into a single space has multiple applications. In order to map from a source space into a target space, a common approach is to learn a linear mapping that minimizes the distances between equivalences listed in a bilingual dictionary.\n\nIn this paper, we **propose a framework that generalizes previous work, provides an efficient exact method to learn the optimal linear transformation and yields the best bilingual results in translation induction** while preserving monolingual performance in an analogy task.",
+    "url": "https://www.aclweb.org/anthology/D16-1250",
+    "citation_count": 161,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 77,
+        "mention_description": "Mapping is learned to translate between two languages.",
+        "use_case": {
+          "uc_id": 30,
+          "title": "Mapping Between Word Vector Spaces",
+          "description": "Given two vector spaces of different WEMs, there might be a simple natural mapping between the two, translating embeddings from one WEM into embeddings of the other.\n\nProvided that the individual WEMs are meaningful in their respective domains, such a **mapping can serve as a translation between the vocabularies of these domains.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 6,
+              "name": "Translation",
+              "description": "Mapping text of one language to text of another language, such that both have similar meanings."
+            },
+            "application_description": "A linear mapping is learned to translate between embeddings of each language."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2452,
+    "abbreviation": "[Faruqui 2014]",
+    "title": "Improving vector space word representations using multilingual correlation",
+    "year": 2014,
+    "authors": "M Faruqui, C Dyer",
+    "abstract": "The distributional hypothesis of Harris (1954), according to which the meaning of words is evidenced by the contexts they occur in, has motivated several effective techniques for obtaining vector space semantic representations of words using unannotated text corpora. This paper argues that lexico-semantic content should additionally be invariant across languages and proposes a simple technique based on canonical correlation analysis (CCA) for incorporating multilingual evidence into vectors generated monolingually. We evaluate \u2026",
+    "url": "https://www.aclweb.org/anthology/E14-1049",
+    "citation_count": 408,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?q=Improving%20Vector%20Space%20Word%20Representations%20Using%20Multilingual%20Correlation&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 79,
+        "mention_description": "Bilingual word vectors perform better in similarity benchmarks.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Bilingual word vectors perform better in similarity benchmarks:\n\n - correlation on various word similarity datasets\n - Mikolov's analogy tests"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2487,
+    "abbreviation": "[Sanh 2019]",
+    "title": "A hierarchical multi-task approach for learning embeddings from semantic tasks",
+    "year": 2019,
+    "authors": "V Sanh, T Wolf, S Ruder",
+    "abstract": "Much effort has been devoted to evaluate whether multi-task learning can be leveraged to learn rich representations that can be used in various Natural Language Processing (NLP) down-stream applications. However, there is still a lack of understanding of the settings in \u2026",
+    "url": "https://www.aaai.org/ojs/index.php/AAAI/article/view/4673",
+    "citation_count": 28,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=14181983828043963745&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1794
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 82,
+        "mention_description": "Embeddings enhance the input.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": []
+      }
+    ]
+  },
+  {
+    "pub_id": 2580,
+    "abbreviation": "[Ling 2015]",
+    "title": "Finding function in form: Compositional character models for open vocabulary word representation",
+    "year": 2015,
+    "authors": "W Ling, T Lu\u00eds, L Marujo, RF Astudillo, S Amir\u2026",
+    "abstract": "We introduce a model for constructing vector representations of words by composing characters using bidirectional LSTMs. Relative to traditional word representation models that have independent vectors for each word type, our model requires only a single vector per character type and a fixed set of parameters for the compositional model.\n\nDespite the compactness of this model and, more importantly, the arbitrary nature of the form-function relationship in language, our \"composed\" word representations yield state-of-the-art results in language modeling and part-of-speech tagging. Benefits over traditional baselines are particularly pronounced in morphologically rich languages (e.g., Turkish).",
+    "url": "https://arxiv.org/abs/1508.02096",
+    "citation_count": 413,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?q=Finding%20Function%20in%20Form%3A%20Compositional%20Character%20Models%20for%20Open%20Vocabulary%20Word%20Representation&hl=en",
+        "included_because": "supplementary"
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 90,
+        "mention_description": "Character-based embeddings enhance the input for various task-specific models.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 20,
+              "name": "Part-of-speech Tagging",
+              "description": "Assigning a part-of-speech (POS) to each word in a text (POS = a category of words which have similar grammatical properties)."
+            },
+            "application_description": "WSJ-PTB benchmark."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 491,
+    "abbreviation": "[Kiros 2015]",
+    "title": "Skip-thought vectors",
+    "year": 2015,
+    "authors": "R Kiros, Y Zhu, RR Salakhutdinov, R Zemel\u2026",
+    "abstract": "We describe an approach for unsupervised learning of a generic, distributed sentence encoder. Using the continuity of text from books, we train an encoder-decoder model that tries to reconstruct the surrounding sentences of an encoded passage. Sentences that share semantic and syntactic properties are thus mapped to similar vector representations.\n\nWe next introduce a simple vocabulary expansion method to encode words that were not seen as part of training, allowing us to expand our vocabulary to a million words. After training our model, we extract and evaluate our vectors with linear models on 8 tasks: semantic relatedness, paraphrase detection, image-sentence ranking, question-type classification and 4 benchmark sentiment and subjectivity datasets.\n\nThe end result is an off-the-shelf encoder that can produce highly generic sentence representations that are robust and perform well in practice. We will make our encoder publicly available.",
+    "url": "http://papers.nips.cc/paper/5950-skip-thought-vectors",
+    "citation_count": 1382,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 88,
+        "mention_description": "The input of several **linear** models is improved by the skip-thought vectors.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "Skip-thought embeddings of sentences are used in various classification tasks."
+          },
+          {
+            "domain": {
+              "dom_id": 18,
+              "name": "Image Captioning & Object Recognition",
+              "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
+            },
+            "application_description": "The sentence describing an image best out of a large set of sentences is chosen using its skip-thought representation.\nI.e. for each sentence embedding, a compatibility score with the image embedding is computed, then the max is chosen."
+          }
+        ]
+      },
+      {
+        "mention_id": 87,
+        "mention_description": "Distances (dot-product and absolute distance) are used to solve a paraphrase detection task.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 15,
+              "name": "Natural Language Inference",
+              "description": "Determining the logical relationship between text snippets, e.g. entailment, contradiction or independence."
+            },
+            "application_description": "Embeddings improve performance on paraphrase detection (SICK dataset)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 489,
+    "abbreviation": "[Bojanowski 2017]",
+    "title": "Enriching word vectors with subword information",
+    "year": 2017,
+    "authors": "P Bojanowski, E Grave, A Joulin, T Mikolov",
+    "abstract": "Continuous word representations, trained on large unlabeled corpora are useful for many natural language processing tasks. Popular models that learn such representations ignore the morphology of words, by assigning a distinct vector to each word.\n\nThis is a limitation, especially for languages with large vocabularies and many rare words. In this paper, we propose a new approach based on the skipgram model, where each word is represented as a bag of character n-grams. A vector representation is associated to each character n-gram; words being represented as the sum of these representations.\nOur method is fast, allowing to train models on large corpora quickly and allows us to compute word representations for words that did not appear in the training data.\n\nWe evaluate our word representations on nine different languages, both on word similarity and analogy tasks. By comparing to recently proposed morphological word representations, we show that our vectors achieve state-of-the-art performance on these tasks.",
+    "url": "https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00051",
+    "citation_count": 2561,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 86,
+        "mention_description": "Distances are used to solve word similarity and analogy tasks.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Distances between words are interpreted as their semantic dissimilarity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2480,
+    "abbreviation": "[Artetxe 2019]",
+    "title": "Massively multilingual sentence embeddings for zero-shot cross-lingual transfer and beyond",
+    "year": 2019,
+    "authors": "M Artetxe, H Schwenk",
+    "abstract": "We introduce an architecture to learn joint multilingual sentence representations for 93 languages, belonging to more than 30 different families and written in 28 different scripts. Our system uses a single BiLSTM encoder with a shared byte-pair encoding vocabulary for all languages, which is coupled with an auxiliary decoder and trained on publicly available parallel corpora.\n\nThis enables us to learn a classifier on top of the resulting embeddings using English annotated data only, and transfer it to any of the 93 languages without any modification. Our experiments in cross-lingual natural language inference (XNLI data set), cross-lingual document classification (MLDoc data set), and parallel corpus mining (BUCC data set) show the effectiveness of our approach.\n\nWe also introduce a new test set of aligned sentences in 112 languages, and show that our **sentence embeddings obtain strong results in multilingual similarity search even for low- resource languages**. Our implementation, the pre-trained encoder, and the multilingual test set are available at https://github.com/facebookresearch/LASER.",
+    "url": "https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00288",
+    "citation_count": 63,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=14181983828043963745&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1794
+      },
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 80,
+        "mention_description": "Sentence embeddings capture the semantic similarity of the sentences well.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Sentence embeddings perform well on a benchmark using 121 languages.\nFor each language, up to 1000 pairs of an English sentences the corresponding similiar sentence from the other language are available.\nEvaluation is done by finding the nearest neighbor for each English sentence in the other language (and vice versa) according to cosine similarity and computing the error rate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 479,
+    "abbreviation": "[Pennington 2014]",
+    "title": "GloVe: Global Vectors for Word Representation",
+    "year": 2014,
+    "authors": "J Pennington, R Socher, C Manning",
+    "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+    "url": "https://www.aclweb.org/anthology/D14-1162",
+    "citation_count": 11335,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+        "included_because": "primary"
+      },
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 84,
+        "mention_description": "Distances are used to solve Mikolovs analogy task.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "GloVe embeddings are used in Mikolovs analogy task.\nAlso some word similarity benchmarks are computed, e.g. WordSim-353."
+          }
+        ]
+      },
+      {
+        "mention_id": 85,
+        "mention_description": "GloVe embeddings enhance the input of ML models.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 12,
+              "name": "Named-Entity Recognition",
+              "description": "Determining which items in a text map to proper names, such as people or places, and what the type of each such name is (e.g. person, location, organization)."
+            },
+            "application_description": "GloVe embeddings increase performance of CRF model in NER."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 510,
+    "abbreviation": "[Hill 2015]",
+    "title": "Simlex-999: Evaluating semantic models with (genuine) similarity estimation",
+    "year": 2015,
+    "authors": "F Hill, R Reichart, A Korhonen",
+    "abstract": "We present SimLex-999, a gold standard resource for evaluating distributional semantic models that improves on existing resources in several important ways.\n\nFirst, in contrast to gold standards such as WordSim-353 and MEN, it **explicitly quantifies similarity rather than association or relatedness** so that pairs of entities that are associated but not actually similar (Freud, psychology) have a low rating.\nWe show that, via this focus on similarity, SimLex-999 **incentivizes the development of models with a different, and arguably wider, range of applications than those which reflect conceptual association**.\n\nSecond, SimLex-999 contains a range of concrete and abstract adjective, noun, and verb pairs, together with an independent rating of concreteness and (free) association strength for each pair. This diversity enables fine-grained analyses of the performance of models on concepts of different types, and consequently greater insight into how architectures can be improved.\n\nFurther, unlike existing gold standard evaluations, for which automatic approaches have reached or surpassed the inter-annotator agreement ceiling, state-of-the-art models perform well below this ceiling on SimLex-999. There is therefore plenty of scope for SimLex-999 to quantify future improvements to distributional semantic models, **guiding the development of the next generation of representation-learning architectures.**\n\n\nComment\n----------\n\nSimlex-999 implements a specific word distance metric: *similarity* (as opposed to *assocation/relatedness*).\n\nFor various WEMs the authors check the correlation between vector distances and Simlex-999 distances and find that current models tend to implement *association* and not *similarity*.",
+    "url": "https://www.mitpressjournals.org/doi/abs/10.1162/COLI_a_00237",
+    "citation_count": 690,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 74,
+        "mention_description": "This paper measures how well distances between embeddings of a WEM can be interpreted as dissimilarity scores.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Authors define a stronger version of semantic similarity than could be found in the previous benchmarks\n -> show that existing models are not so good in capturing similarity\n     (existing models tend to capture relatedness instead)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 591,
+    "abbreviation": "[Conneau 2017]",
+    "title": "Word translation without parallel data",
+    "year": 2017,
+    "authors": "A Conneau, G Lample, MA Ranzato, L Denoyer\u2026",
+    "abstract": "State-of-the-art methods for learning cross-lingual word embeddings have relied on bilingual dictionaries or parallel corpora. Recent studies showed that the need for parallel data supervision can be alleviated with character-level information. While these methods showed encouraging results, they are not on par with their supervised counterparts and are limited to pairs of languages sharing a common alphabet.\n\nIn this work, we show that we can build a bilingual dictionary between two languages without using any parallel corpora, by **aligning monolingual word embedding spaces in an unsupervised way**. Without using any character information, our model even outperforms existing supervised methods on cross-lingual tasks for some language pairs.\n\nOur experiments demonstrate that our method works very well also for distant language pairs, like English-Russian or English-Chinese. We finally describe experiments on the English-Esperanto low-resource language pair, on which there only exists a limited amount of parallel data, to show the potential impact of our method in fully unsupervised machine translation. Our code, embeddings and dictionaries are publicly available. ",
+    "url": "https://arxiv.org/abs/1710.04087",
+    "citation_count": 345,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      },
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 78,
+        "mention_description": "A linear mapping between two vector spaces is learned **unsupervised**.",
+        "use_case": {
+          "uc_id": 30,
+          "title": "Mapping Between Word Vector Spaces",
+          "description": "Given two vector spaces of different WEMs, there might be a simple natural mapping between the two, translating embeddings from one WEM into embeddings of the other.\n\nProvided that the individual WEMs are meaningful in their respective domains, such a **mapping can serve as a translation between the vocabularies of these domains.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 6,
+              "name": "Translation",
+              "description": "Mapping text of one language to text of another language, such that both have similar meanings."
+            },
+            "application_description": "Mapping outperforms other linear mappings for several translation tasks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 509,
+    "abbreviation": "[Kumar 2016]",
+    "title": "Ask me anything: Dynamic memory networks for natural language processing",
+    "year": 2016,
+    "authors": "A Kumar, O Irsoy, P Ondruska, M Iyyer\u2026",
+    "abstract": "Most tasks in natural language processing can be cast into question answering (QA) problems over language input. We introduce the dynamic memory network (DMN), a neural network architecture which processes input sequences and questions, forms episodic memories, and generates relevant answers.\nQuestions trigger an iterative attention process which allows the model to condition its attention on the inputs and the result of previous iterations.\nThese results are then reasoned over in a hierarchical recurrent sequence model to generate answers.\n\nThe DMN can be trained end-to-end and obtains state-of-the-art results on several types of tasks and datasets: question answering (Facebook's bAbI dataset), text classification for sentiment analysis (Stanford Sentiment Treebank) and sequence modeling for part-of-speech tagging (WSJ-PTB).\nThe training for these different tasks **relies exclusively on trained word vector representations and input-question-answer triplets**. ",
+    "url": "http://www.jmlr.org/proceedings/papers/v48/kumar16.pdf",
+    "citation_count": 718,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 479
+      },
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 89,
+        "mention_description": "Embeddings serve as inputs for complex task models.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 16,
+              "name": "Question Answering",
+              "description": "Highlighting the part of a document that contains the answer to a given question (if any)."
+            },
+            "application_description": "Ability to answer questions is benchmarked on the acebook bAbI dataset."
+          },
+          {
+            "domain": {
+              "dom_id": 27,
+              "name": "Text Classification",
+              "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
+            },
+            "application_description": "Stanford Sentiment Treebank, sentiment classification."
+          },
+          {
+            "domain": {
+              "dom_id": 20,
+              "name": "Part-of-speech Tagging",
+              "description": "Assigning a part-of-speech (POS) to each word in a text (POS = a category of words which have similar grammatical properties)."
+            },
+            "application_description": "WSJ-PTB benchmark."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 511,
+    "abbreviation": "[Vinyals 2015]",
+    "title": "Grammar as a foreign language",
+    "year": 2015,
+    "authors": "O Vinyals, \u0141 Kaiser, T Koo, S Petrov\u2026",
+    "abstract": "Syntactic constituency parsing is a fundamental problem in natural language processing and has been the subject of intensive research and engineering for decades. As a result, the most accurate parsers are domain specific, complex, and inefficient.\n\nIn this paper we show that the domain agnostic attention-enhanced sequence-to-sequence model achieves state-of-the-art results on the most widely used syntactic constituency parsing dataset, when trained on a large synthetic corpus that was annotated using existing parsers.\nIt also matches the performance of standard parsers when trained only on a small human-annotated dataset, which shows that this model is highly data-efficient, in contrast to sequence-to-sequence models without the attention mechanism.\nOur parser is also fast, processing over a hundred sentences per second with an unoptimized CPU implementation. ",
+    "url": "http://papers.nips.cc/paper/5635-grammar-as-a-foreign-language",
+    "citation_count": 636,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 65,
+        "mention_description": "Use pre-trained skip-gram embeddings as input to neural network.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 26,
+              "name": "Parsing",
+              "description": "Extracting a parse tree from a sentence that represents its syntactic structure.\nThe resulting parse tree can be constituency based or dependency based."
+            },
+            "application_description": "Sentence parse-tree is linearized and fed into a neural network. The words are embedded with skip-gram."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 705,
+    "abbreviation": "[Ammar 2016]",
+    "title": "Many languages, one parser",
+    "year": 2016,
+    "authors": "W Ammar, G Mulcaire, M Ballesteros, C Dyer\u2026",
+    "abstract": "We train one multilingual model for dependency parsing and use it to parse sentences in several languages. The parsing model uses\n\n 1. multilingual word clusters and embeddings;\n 2. token-level language information; and\n 3.  language-specific features (fine-grained POS tags).\n\nThis input representation enables the parser not only to parse effectively in multiple languages, but also to **generalize across languages based on linguistic universals and typological similarities, making it more effective to learn from limited annotations**.\nOur parser\u2019s performance compares favorably to strong baselines in a range of data scenarios, including when the target language has a large treebank, a small treebank, or no treebank for training.\n",
+    "url": "https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00109",
+    "citation_count": 114,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 75,
+        "mention_description": "Multilingual embeddings allow to implement a multilingual parser.",
+        "use_case": {
+          "uc_id": 27,
+          "title": "Enhancing the Input",
+          "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 26,
+              "name": "Parsing",
+              "description": "Extracting a parse tree from a sentence that represents its syntactic structure.\nThe resulting parse tree can be constituency based or dependency based."
+            },
+            "application_description": "Embeddings serve as inputs to a multi-lingual dependency parser."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 2486,
+    "abbreviation": "[Tshitoyan 2019]",
+    "title": "Unsupervised word embeddings capture latent knowledge from materials science literature",
+    "year": 2019,
+    "authors": "V Tshitoyan, J Dagdelen, L Weston, A Dunn, Z Rong\u2026",
+    "abstract": "The overwhelming majority of scientific knowledge is published as text, which is difficult to analyse by either traditional statistical analysis or modern machine learning methods. By contrast, the main source of machine-interpretable data for the materials research community has come from structured property databases which encompass only a small fraction of the knowledge present in the research literature.\n\nBeyond property values, publications contain valuable knowledge regarding the connections and relationships between data items as interpreted by the authors.\nTo improve the identification and use of this knowledge, several studies have focused on the retrieval of information from scientific literature using supervised natural language processing which requires large hand-labelled datasets for training.\n\nHere we show that materials science knowledge present in the published literature can be efficiently encoded as information-dense word embeddings (vector representations of words) without human labelling or supervision.\nWithout any explicit insertion of chemical knowledge, these **embeddings capture complex materials science concepts such as the underlying structure of the periodic table** and structure\u2013property relationships in materials.\n\nFurthermore, we demonstrate that an **unsupervised method can recommend materials for functional applications several years before their discovery**.\nThis suggests that **latent knowledge regarding future discoveries is to a large extent embedded in past publications**.\nOur findings highlight the possibility of extracting knowledge and relationships from the massive body of scientific literature in a collective manner, and point towards a generalized approach to the mining of scientific literature.",
+    "url": "https://www.nature.com/articles/s41586-019-1335-8",
+    "citation_count": 40,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=14181983828043963745&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1794
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 81,
+        "mention_description": "Authors train skip-grams on text from materials science.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 28,
+              "name": "Material Prediction",
+              "description": "Predicting materials that are likely to be useful in the future."
+            },
+            "application_description": "Nearest neighbouring materials to specific wanted properties are searched in the embedding space."
+          }
+        ]
+      }
+    ]
+  }
+]
