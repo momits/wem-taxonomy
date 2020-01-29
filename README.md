@@ -48,7 +48,7 @@ python3 -m pip install -e .
 ## Step 2: Collecting the publications from Google Scholar
 
 In order to finally collect the publications,
-simply execute the module `reproduce_wem_taxonomy`:
+simply execute the module `collect_relevant_publications`:
 ```bash
 python3 -m reproduce_wem_taxonomy.collect_relevant_publications
 ```
