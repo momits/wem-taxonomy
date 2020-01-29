@@ -3,13 +3,14 @@ from typing import Optional, Dict, Iterable
 import argparse
 from getpass import getpass
 
-import psycopg2
 from datetime import date
 
 from typeguard import typechecked
 
 from pubfisher.core import Publication
 from pubfisher.fishers.googlescholar import PublicationGSFisher
+
+from reproduce_wem_taxonomy.share import PgConnector
 
 
 class OriginKind:
@@ -39,19 +40,9 @@ class PgInsertionSummary:
 
 class WEMTaxonomyFisher(PublicationGSFisher):
     @typechecked
-    def __init__(self, host: str, db_name: str, user: str, password: str,
-                 *args, **kwargs):
+    def __init__(self, pg: PgConnector, *args, **kwargs):
         super(WEMTaxonomyFisher, self).__init__(*args, **kwargs)
-        self._pg_host = host
-        self._pg_db_name = db_name
-        self._pg_user = user
-        self._pg_password = password
-
-    def _pg_connect(self):
-        return psycopg2.connect(dbname=self._pg_db_name,
-                                host=self._pg_host,
-                                user=self._pg_user,
-                                password=self._pg_password)
+        self._pg = pg
 
     @typechecked
     def _insert_into_pg_with_existing_origin(self,
@@ -68,8 +59,8 @@ class WEMTaxonomyFisher(PublicationGSFisher):
         :return: a summary of the insertion
         """
 
-        with self._pg_connect() as db:
-            with db.cursor() as cursor:
+        with self._pg.connect() as conn:
+            with conn.cursor() as cursor:
 
                 pub_ids = {}
                 nr = 1
@@ -167,8 +158,8 @@ class WEMTaxonomyFisher(PublicationGSFisher):
 
         origin_id = None
 
-        with self._pg_connect() as db:
-            with db.cursor() as cursor:
+        with self._pg.connect() as conn:
+            with conn.cursor() as cursor:
                 cursor.execute('INSERT INTO origins '
                                '(origin_id, origin_url, origin_retrieval_date, '
                                'origin_cites, origin_kind) '
@@ -341,10 +332,9 @@ if __name__ == '__main__':
                         default='taxonomist')
 
     args = parser.parse_args()
-    password = getpass('Enter password for user {}:'.format(args.user))
+    pw = getpass('Enter password for user {}:'.format(args.user))
 
-    fisher = WEMTaxonomyFisher(host=args.host,
-                               db_name=args.db,
-                               user=args.user,
-                               password=password)
+    pg = PgConnector(host=args.host, db_name=args.db, user=args.user,
+                     password=pw)
+    fisher = WEMTaxonomyFisher(pg)
     fisher.fish_for_taxonomy()
