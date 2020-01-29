@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 11.5
--- Dumped by pg_dump version 11.5
+-- Dumped from database version 11.6
+-- Dumped by pg_dump version 11.6
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -477,6 +477,8 @@ CREATE VIEW public.use_cases_applied_in_domains AS
     domains.dom_super,
     domains.dom_description,
     use_case_mentions.mention_id,
+    use_case_mentions.mention_use_case,
+    use_case_mentions.mention_publication,
     use_case_mentions.mention_description,
     use_cases.uc_id,
     use_cases.uc_short,
