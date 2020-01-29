@@ -15,7 +15,7 @@ psql dbname < data/wem_taxonomy_schema.sql
 where `dbname` is the name of an empty database that you have already created 
 for this purpose.
 You must also create a user called 'taxonomist' who will own the created
-tables. If you intend to use the database with our Use Case Collector (UCC)
+tables. If you intend to use the database with our [Use Case Collector (UCC)][1]
 tool later on, you should execute the above schema dump with a Postgres user 
 who has root privileges.
 The root privileges are needed to install the Postgres trigram extension (pg_trgm).
@@ -55,3 +55,5 @@ python3 -m reproduce_wem_taxonomy.collect_relevant_publications
 
 The publications are now stored in the database table 'publications' of
 your previously created Postgres database.
+
+[1]: https://git.scc.kit.edu/ukqba/use-case-collector
