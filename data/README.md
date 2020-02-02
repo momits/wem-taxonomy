@@ -10,6 +10,12 @@ the `reproduce_wem_taxonomy` python package to fill it with up-to-date relevant
 WEM publications with the same code that we used for our publication.
 Instructions for this are in the top-level `README.md` of this repo. 
 
+## Full database dump
+
+The file `wem_taxonomy_full.sql` is a full dump of our database.
+You can use this file to instantiate our database in a Postgres instance
+and then explore the database with our [graphical UCC tool][1].
+
 ## JSON views 
 
 For convenience, we also provide 3 views on our database as JSON files:
