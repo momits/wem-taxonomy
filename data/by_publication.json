@@ -33,6 +33,34 @@
             },
             "application_description": "ELMO improves the performance on CoNLL-2005 and CoNLL-2012."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 1,
+            "name": "ELMo",
+            "publication": {
+              "pub_id": 1794,
+              "abbreviation": "[Peters 2018]",
+              "title": "Deep contextualized word representations",
+              "year": 2018,
+              "authors": "ME Peters, M Neumann, M Iyyer, M Gardner\u2026",
+              "abstract": "We introduce a new type of deep contextualized word representation that models both\n\n 1. complex characteristics of word use (e.g., syntax and semantics), and\n 2. how these uses vary across linguistic contexts (i.e., to model polysemy).\n\nOur word vectors are learned **functions of the internal states of a deep bidirectional language model (biLM)**, which is pretrained on a large text corpus.\n\nWe show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including\n\n - question answering\n - textual entailment and\n - sentiment analysis.\n\nWe also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.",
+              "url": "https://arxiv.org/abs/1802.05365",
+              "citation_count": 2104,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Deep%20contextualized%20word%20representations&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -69,6 +97,50 @@
               "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
             },
             "application_description": "According to the authors, computing\n```\n  e(king) - e(queen) + e(actor)\n```\nproduces an embedding close to `e(actress)`."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          },
+          {
+            "model_id": 23,
+            "name": "CBOW",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -121,6 +193,60 @@
             },
             "application_description": "ELMO increases performance on SST-2."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 1,
+            "name": "ELMo",
+            "publication": {
+              "pub_id": 1794,
+              "abbreviation": "[Peters 2018]",
+              "title": "Deep contextualized word representations",
+              "year": 2018,
+              "authors": "ME Peters, M Neumann, M Iyyer, M Gardner\u2026",
+              "abstract": "We introduce a new type of deep contextualized word representation that models both\n\n 1. complex characteristics of word use (e.g., syntax and semantics), and\n 2. how these uses vary across linguistic contexts (i.e., to model polysemy).\n\nOur word vectors are learned **functions of the internal states of a deep bidirectional language model (biLM)**, which is pretrained on a large text corpus.\n\nWe show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including\n\n - question answering\n - textual entailment and\n - sentiment analysis.\n\nWe also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.",
+              "url": "https://arxiv.org/abs/1802.05365",
+              "citation_count": 2104,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Deep%20contextualized%20word%20representations&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                }
+              ]
+            },
+            "entity": "Words"
+          },
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -158,6 +284,30 @@
               "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
             },
             "application_description": "Embed words in the same vector space as visuals.\nAccording to the authors, computing\n```\n  e(image of a blue car) - e(the word \"blue\") + e(the word \"red\")\n```\nproduces an embedding close to `e(image of a red car)`."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 5,
+            "name": "Multimodal",
+            "publication": {
+              "pub_id": 506,
+              "abbreviation": "[Kiros 2014]",
+              "title": "Unifying visual-semantic embeddings with multimodal neural language models",
+              "year": 2014,
+              "authors": "R Kiros, R Salakhutdinov, RS Zemel",
+              "abstract": "Inspired by recent advances in multimodal learning and machine translation, we introduce an encoder-decoder pipeline that learns\n\n 1. a multimodal joint embedding space with images and text and\n 2. a novel language model for decoding distributed representations from our space.\n\nOur pipeline effectively **unifies joint image-text embedding models with multimodal neural language models**. We introduce the structure-content neural language model that disentangles the structure of a sentence to its content, conditioned on representations produced by the encoder.\nThe encoder allows one to rank images and sentences while the decoder can generate novel descriptions from scratch. Using LSTM to encode sentences, we **match the state-of-the-art performance on Flickr8K and Flickr30K without using object detections**. We also set new best results when using the 19-layer Oxford convolutional network. Furthermore we show that with linear encoders, the **learned embedding space captures multimodal regularities in terms of vector space arithmetic e.g. *image of a blue car* - \"blue\" + \"red\" is near images of red cars**.\nSample captions generated for 800 images are made available for comparison.",
+              "url": "https://arxiv.org/abs/1411.2539",
+              "citation_count": 739,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words + Images"
           }
         ]
       }
@@ -197,6 +347,30 @@
             },
             "application_description": "Measure the semantic similarity between the query and candidate documents.\nHowever, the dataset the authors used for their evaluation is unclear."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 24,
+            "name": "LSTM-RNN",
+            "publication": {
+              "pub_id": 529,
+              "abbreviation": "[Palangi 2016]",
+              "title": "Deep sentence embedding using long short-term memory networks: Analysis and application to information retrieval",
+              "year": 2016,
+              "authors": "H Palangi, L Deng, Y Shen, J Gao, X He\u2026",
+              "abstract": "This paper develops a model that addresses sentence embedding, a hot topic in current natural language processing research, using recurrent neural networks (RNN) with Long Short-Term Memory (LSTM) cells. The proposed LSTM-RNN model sequentially takes each \u2026",
+              "url": "https://dl.acm.org/citation.cfm?id=2992457",
+              "citation_count": 405,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Sentences"
+          }
         ]
       }
     ]
@@ -234,6 +408,29 @@
               "description": "Highlighting the part of an image that contains the answer to a natural language question (if any) and generating a natural language answer."
             },
             "application_description": "Model using skip-grams performs well on COCO-QA and DAQUAR benchmarks."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -273,6 +470,29 @@
             },
             "application_description": " New way of computing the distance between embeddings yields improvements on MSR and GOOGLE datasets."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -310,6 +530,30 @@
               "description": "Extracting a parse tree from a sentence that represents its syntactic structure.\nThe resulting parse tree can be constituency based or dependency based."
             },
             "application_description": "Embeddings help to implement a dependency parser that can parse multiple languages."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 14,
+            "name": "Bilingual Robust Projection",
+            "publication": {
+              "pub_id": 748,
+              "abbreviation": "[Guo 2015]",
+              "title": "Cross-lingual dependency parsing based on distributed representations",
+              "year": 2015,
+              "authors": "J Guo, W Che, D Yarowsky, H Wang, T Liu",
+              "abstract": "This paper investigates the problem of **cross-lingual dependency parsing**, aiming at inducing dependency parsers for low-resource languages while using only training data from a resource-rich language (e.g. English).\n\nExisting approaches typically don\u2019t include lexical features, which are not transferable across languages. In this paper, we bridge the lexical feature gap by using distributed feature representations and their composition. We provide two algorithms for **inducing cross-lingual distributed representations of words**, which map vocabularies from two different languages into a common vector space. Consequently, both lexical features and non-lexical features can be used in our model for cross-lingual transfer.\n\nFurthermore, our framework is able to incorporate additional useful features such as cross-lingual word clusters. Our combined contributions achieve an average relative error reduction of 10.9% in labeled attachment score as compared with the delexicalized parser, trained on English universal treebank and transferred to three other languages. It also significantly outperforms McDonald et al. (2013) augmented with projected cluster features on identical data.",
+              "url": "https://www.aclweb.org/anthology/P15-1119.pdf",
+              "citation_count": 98,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -357,6 +601,34 @@
             },
             "application_description": "Achieves SOTA performance on Penn Treebank WSJ corpus: 97.55% accuracy"
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -394,6 +666,29 @@
               "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
             },
             "application_description": "Class labels are embedded (e.g. with word2vec), then a model is trained to learn the *compatibility* between image embeddings and class embeddings."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -438,6 +733,29 @@
             },
             "application_description": "Skip-grams improve performance of the model on an evaluation using Freebase relations with the NYT corpus."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -476,6 +794,51 @@
             },
             "application_description": "Embeddings are input to NN for POS tagging."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 10,
+            "name": "Character-based",
+            "publication": {
+              "pub_id": 524,
+              "abbreviation": "[Santos 2014]",
+              "title": "Learning character-level representations for part-of-speech tagging",
+              "year": 2014,
+              "authors": "CD Santos, B Zadrozny",
+              "abstract": "Distributed word representations have recently been proven to be an invaluable resource for NLP. These representations are normally learned using neural networks and capture syntactic and semantic information about words. Information about word morphology and \u2026",
+              "url": "http://www.jmlr.org/proceedings/papers/v32/santos14.pdf",
+              "citation_count": 423,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          },
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -513,6 +876,29 @@
               "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
             },
             "application_description": "Embeddings are evaluated on two analogy-based word similarity tasks, one from Microsoft and one from Google. k-NN is used on cosine distance to find the predicted word.\n-> assumption: cosine distance = semantic distance"
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -565,6 +951,96 @@
             },
             "application_description": "Textual entailment with SNLI: Predict for a pair of sentences their logical relationship."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 9,
+            "name": "2-dimensional",
+            "publication": {
+              "pub_id": 531,
+              "abbreviation": "[Lin 2017]",
+              "title": "A structured self-attentive sentence embedding",
+              "year": 2017,
+              "authors": "Z Lin, M Feng, CN Santos, M Yu, B Xiang\u2026",
+              "abstract": "This paper proposes a new model for extracting an interpretable sentence embedding by introducing self-attention. Instead of using a vector, we use a 2-D matrix to represent the embedding, with each row of the matrix attending on a different part of the sentence. We also \u2026",
+              "url": "https://arxiv.org/abs/1703.03130",
+              "citation_count": 632,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Sentences"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pub_id": 476,
+    "abbreviation": "[Mikolov 2013]",
+    "title": "Distributed representations of words and phrases and their compositionality",
+    "year": 2013,
+    "authors": "T Mikolov, I Sutskever, K Chen, GS Corrado\u2026",
+    "abstract": "The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships.\nIn this paper we present several improvements that make the Skip-gram model more expressive and enable it to learn higher quality vectors more rapidly.\n\nWe show that by subsampling frequent words we obtain significant speedup, and also learn higher quality representations as measured by our tasks. We also introduce Negative Sampling, a simplified variant of Noise Contrastive Estimation (NCE) that learns more accurate vectors for frequent words compared to the hierarchical softmax.\n\nAn inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of Canada'' and \"Air'' cannot be easily combined to obtain \"Air Canada''. Motivated by this example, we present a simple and efficient method for finding phrases, and show that their vector representations can be accurately learned by the Skip-gram model.\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+    "url": "http://papers.nips.cc/paper/5021-distributed-representations-of-words-andphrases",
+    "citation_count": 17270,
+    "included_because": [
+      {
+        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+        "included_because": "cites",
+        "cites_pub_id": 1805
+      }
+    ],
+    "mentions_use_cases": [
+      {
+        "mention_id": 83,
+        "mention_description": "Distances are used to solve analogical reasoning tasks.",
+        "use_case": {
+          "uc_id": 31,
+          "title": "Interpreting Distances of Word Vectors",
+          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
+        },
+        "applied_in_domains": [
+          {
+            "domain": {
+              "dom_id": 24,
+              "name": "Semantic Similarity",
+              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            },
+            "application_description": "Distances are interpreted as semantic similarity."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -608,6 +1084,35 @@
             },
             "application_description": "Run a variety of different benchmarks to measure word similarity:\n\n - WS-353 dataset (Finkelstein etal., 2001) \n - RG-65 (Rubensteinand Goodenough, 1965) dataset \n - MEN dataset (Bruni et al., 2012)\n - Mikolovs analogy tests\n - synonym selection (TOEFL)  (Landauer and Dumais, 1997)\n\nRetrofitted embeddings improve performance on these benchmarks."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 13,
+            "name": "Retrofitted using Semantic Lexicon",
+            "publication": {
+              "pub_id": 518,
+              "abbreviation": "[Faruqui 2014]",
+              "title": "Retrofitting word vectors to semantic lexicons",
+              "year": 2014,
+              "authors": "M Faruqui, J Dodge, SK Jauhar, C Dyer, E Hovy\u2026",
+              "abstract": "Vector space word representations are learned from distributional information of words in large corpora.\nAlthough such statistics are semantically informative, they disregard the valuable information that is contained in semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database.\n\nThis paper proposes a method for **refining vector space representations using relational information from semantic lexicons by encouraging linked words to have similar vector representations**, and it makes no assumptions about how the input vectors were constructed.\n\nEvaluated on a battery of standard lexical semantic evaluation tasks in several languages, we obtain substantial improvements starting with a variety of word vector models. Our refinement method outperforms prior techniques for incorporating semantic lexicons into the word vector training algorithms. ",
+              "url": "https://arxiv.org/abs/1411.4166",
+              "citation_count": 545,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       },
       {
@@ -626,6 +1131,35 @@
               "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
             },
             "application_description": "Embeddings improve scores for sentiment analysis (model: l2-regularized logistic regression), on treebank by Socher et al. (2013)."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 13,
+            "name": "Retrofitted using Semantic Lexicon",
+            "publication": {
+              "pub_id": 518,
+              "abbreviation": "[Faruqui 2014]",
+              "title": "Retrofitting word vectors to semantic lexicons",
+              "year": 2014,
+              "authors": "M Faruqui, J Dodge, SK Jauhar, C Dyer, E Hovy\u2026",
+              "abstract": "Vector space word representations are learned from distributional information of words in large corpora.\nAlthough such statistics are semantically informative, they disregard the valuable information that is contained in semantic lexicons such as WordNet, FrameNet, and the Paraphrase Database.\n\nThis paper proposes a method for **refining vector space representations using relational information from semantic lexicons by encouraging linked words to have similar vector representations**, and it makes no assumptions about how the input vectors were constructed.\n\nEvaluated on a battery of standard lexical semantic evaluation tasks in several languages, we obtain substantial improvements starting with a variety of word vector models. Our refinement method outperforms prior techniques for incorporating semantic lexicons into the word vector training algorithms. ",
+              "url": "https://arxiv.org/abs/1411.4166",
+              "citation_count": 545,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -701,43 +1235,33 @@
             },
             "application_description": "*Sentiment classification task in the Stanford Sentiment Treebank (SST-5; Socher et al., 2013):*\n\nSelecting one of five labels (from very negative to very\npositive) to describe a sentence from a movie re-\nview.\n\nELMO achieves 1% *absolute* increase of accuracy."
           }
-        ]
-      }
-    ]
-  },
-  {
-    "pub_id": 476,
-    "abbreviation": "[Mikolov 2013]",
-    "title": "Distributed representations of words and phrases and their compositionality",
-    "year": 2013,
-    "authors": "T Mikolov, I Sutskever, K Chen, GS Corrado\u2026",
-    "abstract": "The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships.\nIn this paper we present several improvements that make the Skip-gram model more expressive and enable it to learn higher quality vectors more rapidly.\n\nWe show that by subsampling frequent words we obtain significant speedup, and also learn higher quality representations as measured by our tasks. We also introduce Negative Sampling, a simplified variant of Noise Contrastive Estimation (NCE) that learns more accurate vectors for frequent words compared to the hierarchical softmax.\n\nAn inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of Canada'' and \"Air'' cannot be easily combined to obtain \"Air Canada''. Motivated by this example, we present a simple and efficient method for finding phrases, and show that their vector representations can be accurately learned by the Skip-gram model.\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
-    "url": "http://papers.nips.cc/paper/5021-distributed-representations-of-words-andphrases",
-    "citation_count": 17270,
-    "included_because": [
-      {
-        "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
-        "included_because": "cites",
-        "cites_pub_id": 1805
-      }
-    ],
-    "mentions_use_cases": [
-      {
-        "mention_id": 83,
-        "mention_description": "Distances are used to solve analogical reasoning tasks.",
-        "use_case": {
-          "uc_id": 31,
-          "title": "Interpreting Distances of Word Vectors",
-          "description": "Semantic and syntactical relations between words can be evaluated in the vector space produced by a WEM using distance vectors (Mikolov 2013).\n\nSuch distance vectors can e.g. be used to **improve the ability of systems to induce outputs by semantical analogy.**"
-        },
-        "applied_in_domains": [
+        ],
+        "used_models": [
           {
-            "domain": {
-              "dom_id": 24,
-              "name": "Semantic Similarity",
-              "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
+            "model_id": 1,
+            "name": "ELMo",
+            "publication": {
+              "pub_id": 1794,
+              "abbreviation": "[Peters 2018]",
+              "title": "Deep contextualized word representations",
+              "year": 2018,
+              "authors": "ME Peters, M Neumann, M Iyyer, M Gardner\u2026",
+              "abstract": "We introduce a new type of deep contextualized word representation that models both\n\n 1. complex characteristics of word use (e.g., syntax and semantics), and\n 2. how these uses vary across linguistic contexts (i.e., to model polysemy).\n\nOur word vectors are learned **functions of the internal states of a deep bidirectional language model (biLM)**, which is pretrained on a large text corpus.\n\nWe show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including\n\n - question answering\n - textual entailment and\n - sentiment analysis.\n\nWe also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.",
+              "url": "https://arxiv.org/abs/1802.05365",
+              "citation_count": 2104,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Deep%20contextualized%20word%20representations&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                }
+              ]
             },
-            "application_description": "Distances are interpreted as semantic similarity."
+            "entity": "Words"
           }
         ]
       }
@@ -777,6 +1301,29 @@
             },
             "application_description": "Query predicates are encoded as vectors using the embeddings of the values contained in the predicate."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -814,6 +1361,34 @@
               "description": "Highlighting the part of an image that contains the answer to a natural language question (if any) and generating a natural language answer."
             },
             "application_description": ""
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -853,6 +1428,50 @@
             },
             "application_description": "SGNS help to improve the performance."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 19,
+            "name": "Character-based",
+            "publication": {
+              "pub_id": 2580,
+              "abbreviation": "[Ling 2015]",
+              "title": "Finding function in form: Compositional character models for open vocabulary word representation",
+              "year": 2015,
+              "authors": "W Ling, T Lu\u00eds, L Marujo, RF Astudillo, S Amir\u2026",
+              "abstract": "We introduce a model for constructing vector representations of words by composing characters using bidirectional LSTMs. Relative to traditional word representation models that have independent vectors for each word type, our model requires only a single vector per character type and a fixed set of parameters for the compositional model.\n\nDespite the compactness of this model and, more importantly, the arbitrary nature of the form-function relationship in language, our \"composed\" word representations yield state-of-the-art results in language modeling and part-of-speech tagging. Benefits over traditional baselines are particularly pronounced in morphologically rich languages (e.g., Turkish).",
+              "url": "https://arxiv.org/abs/1508.02096",
+              "citation_count": 413,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Finding%20Function%20in%20Form%3A%20Compositional%20Character%20Models%20for%20Open%20Vocabulary%20Word%20Representation&hl=en",
+                  "included_because": "supplementary"
+                }
+              ]
+            },
+            "entity": "Words"
+          },
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -890,6 +1509,29 @@
               "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
             },
             "application_description": "Annotate images with dense descriptions of the entities visible in specific regions and their semantic relationships.\n\nTo assess the quality of their annotations, they want to analyse the \"semantic diversity\" of the region descriptions, like this:\n\n 1. Map each word of a region description to the corresponding\n     skip-gram embedding (using the word2vec pre-trained model).\n 2. Average of all embeddings = region embedding\n 3. Cluster the region embeddings with hierarchical agglomerative\n     clustering (assumption: distances between embeddings\n     represent semantic dissimilarity).\n\nObtain 71 \"semantic/syntactic clusters\".\nDiversity: on average, each image contains descriptions from 17 different clusters."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -929,6 +1571,29 @@
             },
             "application_description": "A simple linear mapping between the vector spaces of the WEMs of two different languages is learned and used for translation between those languages."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -966,6 +1631,34 @@
               "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
             },
             "application_description": "Embeddings are used to improve CNN for sentence classification tasks."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1005,6 +1698,34 @@
             },
             "application_description": "Improvements in SQuaD (2016) and adversarial SQuaD (2017)."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 1,
+            "name": "ELMo",
+            "publication": {
+              "pub_id": 1794,
+              "abbreviation": "[Peters 2018]",
+              "title": "Deep contextualized word representations",
+              "year": 2018,
+              "authors": "ME Peters, M Neumann, M Iyyer, M Gardner\u2026",
+              "abstract": "We introduce a new type of deep contextualized word representation that models both\n\n 1. complex characteristics of word use (e.g., syntax and semantics), and\n 2. how these uses vary across linguistic contexts (i.e., to model polysemy).\n\nOur word vectors are learned **functions of the internal states of a deep bidirectional language model (biLM)**, which is pretrained on a large text corpus.\n\nWe show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including\n\n - question answering\n - textual entailment and\n - sentiment analysis.\n\nWe also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.",
+              "url": "https://arxiv.org/abs/1802.05365",
+              "citation_count": 2104,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Deep%20contextualized%20word%20representations&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -1042,6 +1763,29 @@
               "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
             },
             "application_description": "Achieves state-of-the-art performance on the 1000-class ImageNet object recognition challenge (ILSVRC 2012 1K)."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1081,6 +1825,34 @@
             },
             "application_description": "Embeddings of nodes are initialized using GloVe."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       },
       {
@@ -1099,6 +1871,34 @@
               "description": "Assigning a label to a node in a graph using information from neighboring nodes."
             },
             "application_description": "Embeddings of neighboring nodes are used to predict an embedding of the target node."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1138,6 +1938,34 @@
             },
             "application_description": "Outperforms SOTA systems on Flickr30k and COCO."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -1175,6 +2003,29 @@
               "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
             },
             "application_description": "\"initializing word-embeddings using unsupervised pre-training gives an *absolute accuracy increase of around 4.5* when compared to randomly initializing the word-embeddings\"\n(on the SST-5 benchmark)"
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1214,6 +2065,72 @@
             },
             "application_description": "PEM reduces error rate on SST-5 and improves performance on IMDB data."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 12,
+            "name": "Paragraph Embeddings",
+            "publication": {
+              "pub_id": 482,
+              "abbreviation": "[Le 2014]",
+              "title": "Distributed representations of sentences and documents",
+              "year": 2014,
+              "authors": "Q Le, T Mikolov",
+              "abstract": "Many machine learning algorithms require the input to be represented as a fixed-length feature vector. When it comes to texts, one of the most common fixed-length features is bag-of-words.\nDespite their popularity, bag-of-words features have two major weaknesses: they lose the ordering of the words and they also ignore semantics of the words. For example, \"powerful,\" \"strong\" and \"Paris\" are equally distant.\n\nIn this paper, we propose Paragraph Vector, an unsupervised algorithm that **learns fixed-length feature representations from variable-length pieces of texts**, such as sentences, paragraphs, and documents. Our algorithm represents each document by a dense vector which is trained to predict words in the document. Its construction gives our algorithm the potential to overcome the weaknesses of bag-of-words models. Empirical results show that **Paragraph Vectors outperform bag-of-words models** as well as other techniques for text representations. Finally, we achieve new **state-of-the-art results on several text classification and sentiment analysis tasks**. ",
+              "url": "http://www.jmlr.org/proceedings/papers/v32/le14.pdf",
+              "citation_count": 5038,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Paragraphs"
+          },
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          },
+          {
+            "model_id": 23,
+            "name": "CBOW",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -1251,6 +2168,29 @@
               "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
             },
             "application_description": "Use skip-gram embeddings to derive a similarity metric between documents which they call *Word Mover's Distance* (WMD).\n\nCompare WMD with other metrics by measuring the\nperformance of various k-NN classification problems of documents.\n**WMD outperforms all 7 state-of-the-art alternative document distances in 6 of 8 real world classification tasks**.\nThus, the distance vectors produced by the skip-gram embeddings can be used to effectively classify documents."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1290,6 +2230,29 @@
             },
             "application_description": "Given an existing image classifier producing a distribution over all possible captions, the **embeddings corresponding to the caption words are weighted according to the captions probability**, then summed up to form the predicted embedding.\nThen, a **k-NN search is used to determine the k most probable classes**.\n\nReaches a larger *hierarchical precision* on unseen images than *DeViSe* and even outperforms the original model on the original classes (w.r.t hierarchical precision).\n\nA nice example of *zero-shot learning*:\nthe interpolation between word vectors is able to predict captions which never occurred in the training data."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -1327,6 +2290,29 @@
               "description": "Object Recognition:\nDetecting instances of semantic objects (and their relationships) in digital images and videos.\n\nImage Captioning:\nGenerating a natural language description of an image."
             },
             "application_description": "Full sentences describing images are produced."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1366,6 +2352,51 @@
             },
             "application_description": "Full sentences to describe images are generated.\nObtains state of the art results on Flickr8K, Flickr30K and MSCOCO.\n"
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 16,
+            "name": "Multimodal",
+            "publication": {
+              "pub_id": 2044,
+              "abbreviation": "[Karpathy 2015]",
+              "title": "Deep visual-semantic alignments for generating image descriptions",
+              "year": 2015,
+              "authors": "A Karpathy, L Fei-Fei",
+              "abstract": "We present a model that generates natural language descriptions of images and their regions. Our approach leverages datasets of images and their sentence descriptions to learn about the inter-modal correspondences between language and visual data.\n\nOur alignment model is based on a novel combination of Convolutional Neural Networks over image regions, bidirectional Recurrent Neural Networks over sentences, and a structured objective that aligns the two modalities through a **multimodal embedding**.\n\nWe then describe a Multimodal Recurrent Neural Network architecture that uses the inferred alignments to learn to generate novel descriptions of image regions. We demonstrate that our alignment model produces **state of the art results in retrieval experiments on Flickr8K, Flickr30K and MSCOCO datasets**. We then show that the generated descriptions significantly outperform retrieval baselines on both full images and on a new dataset of region-level annotations.\n",
+              "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Karpathy_Deep_Visual-Semantic_Alignments_2015_CVPR_paper.html",
+              "citation_count": 3050,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                }
+              ]
+            },
+            "entity": "Words + Images"
+          },
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -1403,6 +2434,34 @@
               "description": "Assigning a class out of a set of classes to a piece of text. E.g. assigning one of multiple sentiments."
             },
             "application_description": "Stanford Sentiment Treebank:\n*Outperforms SOTA systems on fine-grained classification (SST-5)*"
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1442,6 +2501,29 @@
             },
             "application_description": "SGNS are trained for each language. Then a linear mapping between the two vector spaces is learned (optimizing the vector distances to the correct translations on the training data)."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -1479,6 +2561,34 @@
               "description": "Determining the logical relationship between text snippets, e.g. entailment, contradiction or independence."
             },
             "application_description": "Pre-trained GloVe embeddings are used to represent words, which are then fed into a neural network to obtain sentence embeddings.\nThe sentence embeddings are then used to *train a neural network on the new SNLI textual entailment task, which for the first time reaches performance close to a lexicalized model.*"
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1526,6 +2636,30 @@
             },
             "application_description": "Embeddings can be used to translate phrases (maximize cosine distance between phrase embeddings, which are simply the averaged word embeddings)."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 11,
+            "name": "Bilingually trained",
+            "publication": {
+              "pub_id": 519,
+              "abbreviation": "[Zou 2013]",
+              "title": "Bilingual word embeddings for phrase-based machine translation",
+              "year": 2013,
+              "authors": "WY Zou, R Socher, D Cer, CD Manning",
+              "abstract": "We introduce bilingual word embeddings: semantic embeddings associated across two languages in the context of neural language models. We propose a method to learn bilingual embeddings from a large unlabeled corpus, while utilizing MT word alignments to \u2026\n\nPaper has very bad quality :(",
+              "url": "https://www.aclweb.org/anthology/D13-1141",
+              "citation_count": 449,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       },
       {
@@ -1544,6 +2678,30 @@
               "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
             },
             "application_description": "Cosine distance is computed between embeddings of a pair of English-Chinese words, which are known to be translations of each other. This is reported as Alignment Error Rate.\nBilingual embedings reduce this AER."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 11,
+            "name": "Bilingually trained",
+            "publication": {
+              "pub_id": 519,
+              "abbreviation": "[Zou 2013]",
+              "title": "Bilingual word embeddings for phrase-based machine translation",
+              "year": 2013,
+              "authors": "WY Zou, R Socher, D Cer, CD Manning",
+              "abstract": "We introduce bilingual word embeddings: semantic embeddings associated across two languages in the context of neural language models. We propose a method to learn bilingual embeddings from a large unlabeled corpus, while utilizing MT word alignments to \u2026\n\nPaper has very bad quality :(",
+              "url": "https://www.aclweb.org/anthology/D13-1141",
+              "citation_count": 449,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1615,6 +2773,34 @@
             },
             "application_description": "MQAN"
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -1652,6 +2838,29 @@
               "description": "Mapping text of one language to text of another language, such that both have similar meanings."
             },
             "application_description": "A linear mapping is learned to translate between embeddings of each language."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1691,6 +2900,30 @@
             },
             "application_description": "Bilingual word vectors perform better in similarity benchmarks:\n\n - correlation on various word similarity datasets\n - Mikolov's analogy tests"
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 17,
+            "name": "Bilingual based on CCA",
+            "publication": {
+              "pub_id": 2452,
+              "abbreviation": "[Faruqui 2014]",
+              "title": "Improving vector space word representations using multilingual correlation",
+              "year": 2014,
+              "authors": "M Faruqui, C Dyer",
+              "abstract": "The distributional hypothesis of Harris (1954), according to which the meaning of words is evidenced by the contexts they occur in, has motivated several effective techniques for obtaining vector space semantic representations of words using unannotated text corpora. This paper argues that lexico-semantic content should additionally be invariant across languages and proposes a simple technique based on canonical correlation analysis (CCA) for incorporating multilingual evidence into vectors generated monolingually. We evaluate \u2026",
+              "url": "https://www.aclweb.org/anthology/E14-1049",
+              "citation_count": 408,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Improving%20Vector%20Space%20Word%20Representations%20Using%20Multilingual%20Correlation&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -1720,7 +2953,61 @@
           "title": "Enhancing the Input",
           "description": "A WEM can be used for *Feature engineering* in a machine learning model, by mapping existing features to embeddings before training.\n\nOften the embeddings are provided additionally to the original input instead of replacing it.\n\nThe embeddings **inform the new model about the semantic and syntactic aspects of the original input**, which is often relevant to the mapping to be learned (especially for NLP problems)."
         },
-        "applied_in_domains": []
+        "applied_in_domains": [],
+        "used_models": [
+          {
+            "model_id": 1,
+            "name": "ELMo",
+            "publication": {
+              "pub_id": 1794,
+              "abbreviation": "[Peters 2018]",
+              "title": "Deep contextualized word representations",
+              "year": 2018,
+              "authors": "ME Peters, M Neumann, M Iyyer, M Gardner\u2026",
+              "abstract": "We introduce a new type of deep contextualized word representation that models both\n\n 1. complex characteristics of word use (e.g., syntax and semantics), and\n 2. how these uses vary across linguistic contexts (i.e., to model polysemy).\n\nOur word vectors are learned **functions of the internal states of a deep bidirectional language model (biLM)**, which is pretrained on a large text corpus.\n\nWe show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including\n\n - question answering\n - textual entailment and\n - sentiment analysis.\n\nWe also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.",
+              "url": "https://arxiv.org/abs/1802.05365",
+              "citation_count": 2104,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Deep%20contextualized%20word%20representations&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                }
+              ]
+            },
+            "entity": "Words"
+          },
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
+        ]
       }
     ]
   },
@@ -1756,6 +3043,50 @@
               "description": "Assigning a part-of-speech (POS) to each word in a text (POS = a category of words which have similar grammatical properties)."
             },
             "application_description": "WSJ-PTB benchmark."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 19,
+            "name": "Character-based",
+            "publication": {
+              "pub_id": 2580,
+              "abbreviation": "[Ling 2015]",
+              "title": "Finding function in form: Compositional character models for open vocabulary word representation",
+              "year": 2015,
+              "authors": "W Ling, T Lu\u00eds, L Marujo, RF Astudillo, S Amir\u2026",
+              "abstract": "We introduce a model for constructing vector representations of words by composing characters using bidirectional LSTMs. Relative to traditional word representation models that have independent vectors for each word type, our model requires only a single vector per character type and a fixed set of parameters for the compositional model.\n\nDespite the compactness of this model and, more importantly, the arbitrary nature of the form-function relationship in language, our \"composed\" word representations yield state-of-the-art results in language modeling and part-of-speech tagging. Benefits over traditional baselines are particularly pronounced in morphologically rich languages (e.g., Turkish).",
+              "url": "https://arxiv.org/abs/1508.02096",
+              "citation_count": 413,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Finding%20Function%20in%20Form%3A%20Compositional%20Character%20Models%20for%20Open%20Vocabulary%20Word%20Representation&hl=en",
+                  "included_because": "supplementary"
+                }
+              ]
+            },
+            "entity": "Words"
+          },
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1803,6 +3134,30 @@
             },
             "application_description": "The sentence describing an image best out of a large set of sentences is chosen using its skip-thought representation.\nI.e. for each sentence embedding, a compatibility score with the image embedding is computed, then the max is chosen."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 20,
+            "name": "Skip-Thought",
+            "publication": {
+              "pub_id": 491,
+              "abbreviation": "[Kiros 2015]",
+              "title": "Skip-thought vectors",
+              "year": 2015,
+              "authors": "R Kiros, Y Zhu, RR Salakhutdinov, R Zemel\u2026",
+              "abstract": "We describe an approach for unsupervised learning of a generic, distributed sentence encoder. Using the continuity of text from books, we train an encoder-decoder model that tries to reconstruct the surrounding sentences of an encoded passage. Sentences that share semantic and syntactic properties are thus mapped to similar vector representations.\n\nWe next introduce a simple vocabulary expansion method to encode words that were not seen as part of training, allowing us to expand our vocabulary to a million words. After training our model, we extract and evaluate our vectors with linear models on 8 tasks: semantic relatedness, paraphrase detection, image-sentence ranking, question-type classification and 4 benchmark sentiment and subjectivity datasets.\n\nThe end result is an off-the-shelf encoder that can produce highly generic sentence representations that are robust and perform well in practice. We will make our encoder publicly available.",
+              "url": "http://papers.nips.cc/paper/5950-skip-thought-vectors",
+              "citation_count": 1382,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Sentences"
+          }
         ]
       },
       {
@@ -1821,6 +3176,30 @@
               "description": "Determining the logical relationship between text snippets, e.g. entailment, contradiction or independence."
             },
             "application_description": "Embeddings improve performance on paraphrase detection (SICK dataset)."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 20,
+            "name": "Skip-Thought",
+            "publication": {
+              "pub_id": 491,
+              "abbreviation": "[Kiros 2015]",
+              "title": "Skip-thought vectors",
+              "year": 2015,
+              "authors": "R Kiros, Y Zhu, RR Salakhutdinov, R Zemel\u2026",
+              "abstract": "We describe an approach for unsupervised learning of a generic, distributed sentence encoder. Using the continuity of text from books, we train an encoder-decoder model that tries to reconstruct the surrounding sentences of an encoded passage. Sentences that share semantic and syntactic properties are thus mapped to similar vector representations.\n\nWe next introduce a simple vocabulary expansion method to encode words that were not seen as part of training, allowing us to expand our vocabulary to a million words. After training our model, we extract and evaluate our vectors with linear models on 8 tasks: semantic relatedness, paraphrase detection, image-sentence ranking, question-type classification and 4 benchmark sentiment and subjectivity datasets.\n\nThe end result is an off-the-shelf encoder that can produce highly generic sentence representations that are robust and perform well in practice. We will make our encoder publicly available.",
+              "url": "http://papers.nips.cc/paper/5950-skip-thought-vectors",
+              "citation_count": 1382,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Sentences"
           }
         ]
       }
@@ -1859,6 +3238,30 @@
               "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
             },
             "application_description": "Distances between words are interpreted as their semantic dissimilarity."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 21,
+            "name": "Subword-based",
+            "publication": {
+              "pub_id": 489,
+              "abbreviation": "[Bojanowski 2017]",
+              "title": "Enriching word vectors with subword information",
+              "year": 2017,
+              "authors": "P Bojanowski, E Grave, A Joulin, T Mikolov",
+              "abstract": "Continuous word representations, trained on large unlabeled corpora are useful for many natural language processing tasks. Popular models that learn such representations ignore the morphology of words, by assigning a distinct vector to each word.\n\nThis is a limitation, especially for languages with large vocabularies and many rare words. In this paper, we propose a new approach based on the skipgram model, where each word is represented as a bag of character n-grams. A vector representation is associated to each character n-gram; words being represented as the sum of these representations.\nOur method is fast, allowing to train models on large corpora quickly and allows us to compute word representations for words that did not appear in the training data.\n\nWe evaluate our word representations on nine different languages, both on word similarity and analogy tasks. By comparing to recently proposed morphological word representations, we show that our vectors achieve state-of-the-art performance on these tasks.",
+              "url": "https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00051",
+              "citation_count": 2561,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -1903,6 +3306,35 @@
             },
             "application_description": "Sentence embeddings perform well on a benchmark using 121 languages.\nFor each language, up to 1000 pairs of an English sentences the corresponding similiar sentence from the other language are available.\nEvaluation is done by finding the nearest neighbor for each English sentence in the other language (and vice versa) according to cosine similarity and computing the error rate."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 18,
+            "name": "Multilingual",
+            "publication": {
+              "pub_id": 2480,
+              "abbreviation": "[Artetxe 2019]",
+              "title": "Massively multilingual sentence embeddings for zero-shot cross-lingual transfer and beyond",
+              "year": 2019,
+              "authors": "M Artetxe, H Schwenk",
+              "abstract": "We introduce an architecture to learn joint multilingual sentence representations for 93 languages, belonging to more than 30 different families and written in 28 different scripts. Our system uses a single BiLSTM encoder with a shared byte-pair encoding vocabulary for all languages, which is coupled with an auxiliary decoder and trained on publicly available parallel corpora.\n\nThis enables us to learn a classifier on top of the resulting embeddings using English annotated data only, and transfer it to any of the 93 languages without any modification. Our experiments in cross-lingual natural language inference (XNLI data set), cross-lingual document classification (MLDoc data set), and parallel corpus mining (BUCC data set) show the effectiveness of our approach.\n\nWe also introduce a new test set of aligned sentences in 112 languages, and show that our **sentence embeddings obtain strong results in multilingual similarity search even for low- resource languages**. Our implementation, the pre-trained encoder, and the multilingual test set are available at https://github.com/facebookresearch/LASER.",
+              "url": "https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00288",
+              "citation_count": 63,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=14181983828043963745&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1794
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=15824805022753088965&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 479
+                }
+              ]
+            },
+            "entity": "Sentences"
+          }
         ]
       }
     ]
@@ -1945,6 +3377,34 @@
             },
             "application_description": "GloVe embeddings are used in Mikolovs analogy task.\nAlso some word similarity benchmarks are computed, e.g. WordSim-353."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       },
       {
@@ -1963,6 +3423,34 @@
               "description": "Determining which items in a text map to proper names, such as people or places, and what the type of each such name is (e.g. person, location, organization)."
             },
             "application_description": "GloVe embeddings increase performance of CRF model in NER."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -2001,6 +3489,29 @@
               "description": "Computing the distance in meaning between two entities, e.g. between two pieces of text or between an image and a text."
             },
             "application_description": "Authors define a stronger version of semantic similarity than could be found in the previous benchmarks\n -> show that existing models are not so good in capturing similarity\n     (existing models tend to capture relatedness instead)."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -2044,6 +3555,29 @@
               "description": "Mapping text of one language to text of another language, such that both have similar meanings."
             },
             "application_description": "Mapping outperforms other linear mappings for several translation tasks."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -2104,6 +3638,34 @@
             },
             "application_description": "WSJ-PTB benchmark."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 6,
+            "name": "GloVe",
+            "publication": {
+              "pub_id": 479,
+              "abbreviation": "[Pennington 2014]",
+              "title": "GloVe: Global Vectors for Word Representation",
+              "year": 2014,
+              "authors": "J Pennington, R Socher, C Manning",
+              "abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new **global log-bilinear regression model** that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods.\n\nOur model efficiently leverages statistical information by training only on the nonzero elements in a word-word co-occurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model **produces a vector space with meaningful substructure, as evidenced by its performance of 75 % on a recent word analogy task**.\nIt also outperforms related models on similarity tasks and named entity recognition.",
+              "url": "https://www.aclweb.org/anthology/D14-1162",
+              "citation_count": 11335,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Glove%3A%20Global%20vectors%20for%20word%20representation&hl=en",
+                  "included_because": "primary"
+                },
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -2141,6 +3703,29 @@
               "description": "Extracting a parse tree from a sentence that represents its syntactic structure.\nThe resulting parse tree can be constituency based or dependency based."
             },
             "application_description": "Sentence parse-tree is linearized and fed into a neural network. The words are embedded with skip-gram."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
@@ -2180,6 +3765,30 @@
             },
             "application_description": "Embeddings serve as inputs to a multi-lingual dependency parser."
           }
+        ],
+        "used_models": [
+          {
+            "model_id": 14,
+            "name": "Bilingual Robust Projection",
+            "publication": {
+              "pub_id": 748,
+              "abbreviation": "[Guo 2015]",
+              "title": "Cross-lingual dependency parsing based on distributed representations",
+              "year": 2015,
+              "authors": "J Guo, W Che, D Yarowsky, H Wang, T Liu",
+              "abstract": "This paper investigates the problem of **cross-lingual dependency parsing**, aiming at inducing dependency parsers for low-resource languages while using only training data from a resource-rich language (e.g. English).\n\nExisting approaches typically don\u2019t include lexical features, which are not transferable across languages. In this paper, we bridge the lexical feature gap by using distributed feature representations and their composition. We provide two algorithms for **inducing cross-lingual distributed representations of words**, which map vocabularies from two different languages into a common vector space. Consequently, both lexical features and non-lexical features can be used in our model for cross-lingual transfer.\n\nFurthermore, our framework is able to incorporate additional useful features such as cross-lingual word clusters. Our combined contributions achieve an average relative error reduction of 10.9% in labeled attachment score as compared with the delexicalized parser, trained on English universal treebank and transferred to three other languages. It also significantly outperforms McDonald et al. (2013) augmented with projected cluster features on identical data.",
+              "url": "https://www.aclweb.org/anthology/P15-1119.pdf",
+              "citation_count": 98,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?&cites=7447715766504981253&hl=en",
+                  "included_because": "cites",
+                  "cites_pub_id": 1805
+                }
+              ]
+            },
+            "entity": "Words"
+          }
         ]
       }
     ]
@@ -2217,6 +3826,29 @@
               "description": "Predicting materials that are likely to be useful in the future."
             },
             "application_description": "Nearest neighbouring materials to specific wanted properties are searched in the embedding space."
+          }
+        ],
+        "used_models": [
+          {
+            "model_id": 3,
+            "name": "Skip-gram",
+            "publication": {
+              "pub_id": 1805,
+              "abbreviation": "[Mikolov 2013]",
+              "title": "Efficient estimation of word representations in vector space",
+              "year": 2013,
+              "authors": "T Mikolov, K Chen, G Corrado, J Dean",
+              "abstract": "We propose two novel model architectures for computing continuous vector representations of words from very large data sets.\nThe quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks.\n\nWe observe **large improvements in accuracy at much lower computational cost**, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set.\nFurthermore, we show that these **vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.**\n\n\n\nComment\n----------\n\nThis paper does not itself describe many use cases of the model. The quality of the model is assessed with a self-prepared set of semantic and syntactic questions - which seems dangerous w.r.t. overfitting.\nHowever the usefulness of the model follows from the number of citations this has received.\n\nTo find the use cases of Word2Vec we must crawl the citing publications.",
+              "url": "https://arxiv.org/abs/1301.3781",
+              "citation_count": 14011,
+              "included_because": [
+                {
+                  "retrieval_url": "https://scholar.google.com/scholar?q=Efficient%20estimation%20of%20word%20representations%20in%20vector%20space&hl=en",
+                  "included_because": "primary"
+                }
+              ]
+            },
+            "entity": "Words"
           }
         ]
       }
